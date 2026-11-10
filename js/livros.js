@@ -11,6 +11,7 @@ livrosExibidos.forEach((livro) => {
     const card = document.createElement("article");
 
     card.classList.add("livro-card");
+    card.dataset.gratuito = livro.gratuito;
 
     card.innerHTML = `
         <img src="${livro.imagem}" alt="Capa do livro ${livro.titulo}">

@@ -11,6 +11,7 @@
 
     <script src="js/dados.js" defer></script>
     <script src="js/livros.js" defer></script>
+    <script src="js/filtros.js" defer></script>
     <script src="js/quiz.js" defer></script>
 </head>
 <body>
@@ -42,8 +43,38 @@
 
         <section>
             <h2>Livros em Destaque</h2>
+            
+            <div class="pesquisa-livros">
+                <label for="buscar-livro">Pesquisar livros:</label>
+                <input
+                    type="search"
+                    id="buscar-livro"
+                    placeholder="Digite o título ou autor...">
+            </div>
+
+            <div class="filtro-genero">
+                <label for="filtrar-genero">Filtrar por gênero:</label>
+
+                <select id="filtrar-genero">
+                    <option value="todos">Todos os gêneros</option>
+                    <option value="Dark Romance">Dark Romance</option>
+                    <option value="Romance contemporâneo">Romance contemporâneo</option>
+                    <option value="Romance Gótico">Romance Gótico</option>
+                </select>
+            </div>
+
+            <div class="filtro-gratuitos">
+                <label for="somente-gratuitos">
+                    <input type="checkbox" id="somente-gratuitos">
+                    Mostrar somente livros gratuitos
+                </label>
+            </div>
 
             <div class="catalogo-livros" id="catalogo-destaques"></div>
+    
+            <p id="mensagem-sem-resultados" hidden>
+                Nenhum livro encontrado.
+            </p>
         </section>
     
         <section>

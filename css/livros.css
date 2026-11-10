@@ -66,3 +66,47 @@
 .botao-gratis:hover {
     background-color: #46785C;
 }
+
+.pesquisa-livros {
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.pesquisa-livros input {
+    width: 100%;
+}
+
+
+.filtro-genero {
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.filtro-genero select {
+    width: 100%;
+}
+
+.filtro-gratuitos {
+    margin-bottom: 30px;
+}
+
+.filtro-gratuitos label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.filtro-gratuitos input {
+    width: auto;
+}
+
+#mensagem-sem-resultados {
+    text-align: center;
+    color: #D5B895;
+    margin-top: 20px;
+}
+
+#mensagem-sem-resultados[hidden] {
+    display: none;
+}
