@@ -60,40 +60,6 @@ section li:hover {
     cursor: pointer;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 30px;
-}
-
-th, td {
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid #444;
-}
-
-th {
-    background-color: #641C32;
-    color: #F2EDE8;
-}
-
-tr:hover {
-    background-color: #292929;
-}
-
-section img {
-    width: 180px;
-    height: 270px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin: 10px;
-    transition: transform 0.3s ease;
-}
-
-section img:hover {
-    transform: scale(1.05);
-}
-
 a {
     color: #D5B895;
     text-decoration: none;
@@ -173,4 +139,36 @@ footer {
 footer p {
     color: #999;
     font-size: 14px;
+}
+
+header nav {
+    margin-top: 25px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav li {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav a {
+    color: #F2EDE8;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #D5B895;
 }

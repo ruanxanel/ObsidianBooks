@@ -1,0 +1,68 @@
+.catalogo-livros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 25px;
+}
+
+.livro-card {
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.livro-card h3 {
+    color: #D5B895;
+    margin-bottom: 10px;
+}
+
+.livro-card .autor {
+    color: #ccc;
+}
+
+.livro-card .genero {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.botao-livro {
+    display: inline-block;
+    background-color: #641C32;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.livro-card img {
+    width: 100%;
+    max-width: 180px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.livro-card img:hover {
+    transform: scale(1.05);
+}
+
+.botao-livro:hover {
+    background-color: #8B2948;
+    color: #ffffff;
+}
+
+.acoes-livro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.botao-gratis {
+    background-color: #355C46;
+}
+
+.botao-gratis:hover {
+    background-color: #46785C;
+}

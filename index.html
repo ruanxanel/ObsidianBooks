@@ -5,12 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obsidian</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/livros.css">
     <link rel="stylesheet" href="css/responsivo.css">
+    <script src="js/quiz.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Obsidian</h1>
         <p>Obsidian é uma plataforma para descobrir livros de Dark Romance de acordo com o gosto de cada leitor.</p>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="livros.html">Explorar livros</a></li>
+                <li><a href="gratuitos.html">Livros gratuitos</a></li>
+                <li><a href="favoritos.html">Favoritos</a></li>
+                <li><a href="quiz.html">Quiz literário</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section>
@@ -27,25 +38,63 @@
 
         <section>
             <h2>Livros em Destaque</h2>
-            <table>
-                <tr>
-                    <th>Título</th>
-                    <th>Autor(a)</th>
-                    <th>Compre aqui</th>
-                </tr>
-                <tr>
-                    <td>Icebreaker</td>
-                    <td>Hannah Grace</td>
-                    <td><a href="https://www.amazon.com.br/Icebreaker-Hannah-Grace/dp/1398525685" target="_blank" rel="noopener noreferrer">Visitar Amazon</a></td>
-                </tr>
-                <tr>
-                    <td>Haunting Adeline</td>
-                    <td>H. D. Carlton</td>
-                    <td><a href="https://www.amazon.com.br/Haunting-Adeline-H-D-Carlton/dp/855100685" target="_blank" rel="noopener noreferrer">Visitar Amazon</a></td>
-                </tr>
-            </table>
-            <img src="assets/images/Icebreak.webp" alt="Capa do livro Icebreaker, de Hannah Grace" width="200">
-            <img src="assets/images/haunting.webp" alt="Capa do livro Haunting Adeline, de H. D. Carlton" width="200">
+            <div class="catalogo-livros">
+                <article class="livro-card">
+                    <img src="assets/images/haunting.webp"
+                        alt="Capa do livro Haunting Adeline">
+
+                    <h3>Haunting Adeline</h3>
+
+                    <p class="autor">H. D. Carlton</p>
+
+                    <p class="genero">Dark Romance | Suspense</p>
+
+                    <a href="https://www.amazon.com.br/Haunting-Adeline-H-D-Carlton/dp/855100685"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="botao-livro">
+                        Comprar físico
+                    </a>
+                </article>
+
+                <article class="livro-card">
+                    <img src="assets/images/Icebreak.webp"
+                        alt="Capa do livro Icebreaker">
+
+                    <h3>Icebreaker</h3>
+
+                    <p class="autor">Hannah Grace</p>
+
+                    <p class="genero">Romance contemporâneo | Esportivo</p>
+
+                    <a href="https://www.amazon.com.br/Icebreaker-Hannah-Grace/dp/1398525685"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="botao-livro">
+                        Comprar físico
+                    </a>
+                </article>
+
+                <article class="livro-card">
+                    <img src="assets/images/carmilla.webp"
+                        alt="Capa do livro Carmilla">
+
+                    <h3>Carmilla</h3>
+
+                    <p class="autor">Sheridan Le Fanu</p>
+
+                    <p class="genero">Romance Gótico | Vampiros</p>
+
+                    <div class="acoes-livro">
+                        <a href="https://www.gutenberg.org/ebooks/10007"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="botao-livro botao-gratis">
+                            Ler grátis
+                        </a>
+                    </div>
+                </article>
+            </div>
         </section>
     
         <section>
