@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obsidian</title>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/livros.css">
     <link rel="stylesheet" href="css/responsivo.css">
+
+    <script src="js/dados.js" defer></script>
+    <script src="js/livros.js" defer></script>
     <script src="js/quiz.js" defer></script>
 </head>
 <body>
@@ -38,63 +42,8 @@
 
         <section>
             <h2>Livros em Destaque</h2>
-            <div class="catalogo-livros">
-                <article class="livro-card">
-                    <img src="assets/images/haunting.webp"
-                        alt="Capa do livro Haunting Adeline">
 
-                    <h3>Haunting Adeline</h3>
-
-                    <p class="autor">H. D. Carlton</p>
-
-                    <p class="genero">Dark Romance | Suspense</p>
-
-                    <a href="https://www.amazon.com.br/Haunting-Adeline-H-D-Carlton/dp/855100685"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="botao-livro">
-                        Comprar físico
-                    </a>
-                </article>
-
-                <article class="livro-card">
-                    <img src="assets/images/Icebreak.webp"
-                        alt="Capa do livro Icebreaker">
-
-                    <h3>Icebreaker</h3>
-
-                    <p class="autor">Hannah Grace</p>
-
-                    <p class="genero">Romance contemporâneo | Esportivo</p>
-
-                    <a href="https://www.amazon.com.br/Icebreaker-Hannah-Grace/dp/1398525685"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="botao-livro">
-                        Comprar físico
-                    </a>
-                </article>
-
-                <article class="livro-card">
-                    <img src="assets/images/carmilla.webp"
-                        alt="Capa do livro Carmilla">
-
-                    <h3>Carmilla</h3>
-
-                    <p class="autor">Sheridan Le Fanu</p>
-
-                    <p class="genero">Romance Gótico | Vampiros</p>
-
-                    <div class="acoes-livro">
-                        <a href="https://www.gutenberg.org/ebooks/10007"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="botao-livro botao-gratis">
-                            Ler grátis
-                        </a>
-                    </div>
-                </article>
-            </div>
+            <div class="catalogo-livros" id="catalogo-destaques"></div>
         </section>
     
         <section>

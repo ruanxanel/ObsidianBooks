@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/livros.css">
     <link rel="stylesheet" href="css/responsivo.css">
+
+    <script src="js/dados.js" defer></script>
+    <script src="js/livros.js" defer></script>
 </head>
 <body>
     <header>
@@ -35,27 +38,7 @@
                 de forma legal.
             </p>
 
-            <div class="catalogo-livros">
-                <article class="livro-card">
-                    <img src="assets/images/carmilla.webp"
-                        alt="Capa do livro Carmilla">
-
-                    <h3>Carmilla</h3>
-
-                    <p class="autor">Sheridan Le Fanu</p>
-
-                    <p class="genero">Romance Gótico | Vampiros</p>
-
-                    <div class="acoes-livro">
-                        <a href="https://www.gutenberg.org/ebooks/10007"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="botao-livro botao-gratis">
-                            Ler grátis
-                        </a>
-                    </div>
-                </article>
-            </div>
+            <div class="catalogo-livros" id="catalogo-gratuitos"></div>
         </section>
     </main>
 
