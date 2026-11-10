@@ -1,0 +1,65 @@
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 34px;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    section img {
+        width: 150px;
+        height: 225px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 21px;
+    }
+
+    section img {
+        width: 120px;
+        height: 180px;
+        margin: 5px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+        overflow-wrap: anywhere;
+    }
+
+    fieldset {
+        padding: 15px;
+        min-width: 0;
+    }
+
+    legend {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
