@@ -6,6 +6,7 @@ const livros = [
         genero: "Dark Romance",
         imagem: "assets/images/haunting.webp",
         gratuito: false,
+        destaque: true,
         linkCompra: "https://www.amazon.com.br/Haunting-Adeline-H-D-Carlton/dp/1957635002",
         linkGratuito: null
     },
@@ -16,6 +17,7 @@ const livros = [
         genero: "Romance contemporâneo",
         imagem: "assets/images/Icebreak.webp",
         gratuito: false,
+        destaque: false,
         linkCompra: "https://www.amazon.com.br/Icebreaker-Hannah-Grace/dp/1398525685",
         linkGratuito: null
     },
@@ -26,6 +28,7 @@ const livros = [
         genero: "Romance Gótico",
         imagem: "assets/images/carmilla.webp",
         gratuito: true,
+        destaque: true,
         linkCompra: null,
         linkGratuito: "https://www.gutenberg.org/ebooks/10007"
     }

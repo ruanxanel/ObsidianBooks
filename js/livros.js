@@ -1,11 +1,20 @@
 const catalogoDestaques = document.querySelector("#catalogo-destaques");
 const catalogoGratuitos = document.querySelector("#catalogo-gratuitos");
+const catalogoExplorar = document.querySelector("#catalogo-explorar");
 
-const catalogo = catalogoDestaques || catalogoGratuitos;
+const catalogo = catalogoDestaques || catalogoGratuitos || catalogoExplorar;
 
-const livrosExibidos = catalogoGratuitos
-    ? livros.filter((livro) => livro.gratuito && livro.linkGratuito)
-    : livros;
+let livrosExibidos = livros;
+
+if (catalogoGratuitos) {
+    livrosExibidos = livros.filter((livro) =>
+        livro.gratuito && livro.linkGratuito
+    );
+}
+
+if (catalogoDestaques) {
+    livrosExibidos = livros.filter((livro) => livro.destaque);
+}
 
 livrosExibidos.forEach((livro) => {
     const card = document.createElement("article");

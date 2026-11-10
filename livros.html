@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar Livros | Obsidian</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/livros.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+
+    <script src="js/dados.js" defer></script>
+    <script src="js/livros.js" defer></script>
+    <script src="js/filtros.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Obsidian</h1>
+        <p>Explore nosso catálogo e descubra sua próxima leitura favorita.</p>
+
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="livros.html">Explorar livros</a></li>
+                <li><a href="gratuitos.html">Livros gratuitos</a></li>
+                <li><a href="favoritos.html">Favoritos</a></li>
+                <li><a href="quiz.html">Quiz literário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Explorar Livros</h2>
+
+            <p>Descubra histórias e encontre sua próxima leitura favorita.</p>
+
+            <div class="pesquisa-livros">
+                <label for="buscar-livro">Pesquisar livros:</label>
+                <input type="search" 
+                        id="buscar-livro"
+                        placeholder="Digite o título ou autor...">
+            </div>
+
+            <div class="filtro-genero">
+                <label for="filtrar-genero">Filtrar por gênero:</label>
+
+                <select id="filtrar-genero">
+                    <option value="todos">Todos os gêneros</option>
+                    <option value="Dark Romance">Dark Romance</option>
+                    <option value="Romance contemporâneo">Romance contemporâneo</option>
+                    <option value="Romance Gótico">Romance Gótico</option>
+                </select>
+            </div>
+
+            <div class="filtro-gratuitos">
+                <label for="somente-gratuitos">
+                    <input type="checkbox" id="somente-gratuitos">
+                    Mostrar somente livros gratuitos
+                </label>
+            </div>
+
+            <div class="catalogo-livros" id="catalogo-explorar"></div>
+
+            <p id="mensagem-sem-resultados" hidden>
+                Nenhum livro encontrado.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Obsidian. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
