@@ -1,10 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Obsidian | Início</title>
+    <title>Obsidian | Sua Biblioteca Sombria</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/livros.css">
@@ -17,101 +23,211 @@
     <script src="js/filtros.js" defer></script>
     <script src="js/formulario.js" defer></script>
 </head>
-<body>
-    <header>
-        <h1>Obsidian</h1>
-        <p>
-            Explore histórias intensas, romances inesquecíveis e
-            universos sombrios. Encontre sua próxima leitura no Obsidian.
-        </p>
 
-        <nav aria-label="Navegação principal">
-            <ul>
-                <li><a href="index.html" aria-current="page">Início</a></li>
-                <li><a href="livros.html">Explorar livros</a></li>
-                <li><a href="gratuitos.html">Livros gratuitos</a></li>
-                <li><a href="favoritos.html">Favoritos</a></li>
-                <li><a href="quiz.html">Quiz literário</a></li>
-            </ul>
-        </nav>
+<body class="pagina-home">
+
+    <header class="cabecalho-home">
+        <div class="barra-navegacao">
+            <a href="index.html" class="marca">
+                Obsidian
+            </a>
+
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Início</a></li>
+                    <li><a href="livros.html">Explorar</a></li>
+                    <li><a href="gratuitos.html">Gratuitos</a></li>
+                    <li><a href="favoritos.html">Favoritos</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="home-generos">
-            <h2>Gêneros que Exploramos</h2>
+    <main class="conteudo-home">
 
-            <ul>
-                <li>Dark Romance</li>
-                <li>Romance Gótico</li>
-                <li>Romance Contemporâneo</li>
-                <li>Fantasia Contemporânea</li>
+        <section class="hero-home">
+            <div class="hero-conteudo">
+                <p class="hero-etiqueta">
+                    SUA PRÓXIMA HISTÓRIA COMEÇA AQUI
+                </p>
+
+                <h1>
+                    Entre páginas,
+                    <span>sombras e paixões.</span>
+                </h1>
+
+                <p class="hero-descricao">
+                    Descubra histórias intensas, romances
+                    inesquecíveis e universos sombrios.
+                    Encontre o livro que vai conquistar
+                    sua imaginação.
+                </p>
+
+                <div class="hero-acoes">
+                    <a href="livros.html" class="hero-botao">
+                        Explorar biblioteca
+                    </a>
+
+                    <a href="quiz.html" class="hero-link">
+                        Descobrir minha leitura
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-generos">
+            <div class="titulo-secao">
+                <p class="secao-etiqueta">UNIVERSOS LITERÁRIOS</p>
+                <h2>Explore nossos gêneros</h2>
+                <p>
+                    Cada história guarda um universo.
+                    Descubra qual deles combina com você.
+                </p>
+            </div>
+
+            <ul class="lista-generos">
+                <li>
+                    <span class="genero-numero">01</span>
+                    <h3>Dark Romance</h3>
+                    <p>Paixões intensas e histórias sombrias.</p>
+                </li>
+
+                <li>
+                    <span class="genero-numero">02</span>
+                    <h3>Romance Gótico</h3>
+                    <p>Mistério, atmosfera e emoções profundas.</p>
+                </li>
+
+                <li>
+                    <span class="genero-numero">03</span>
+                    <h3>Romance Contemporâneo</h3>
+                    <p>Amores e encontros da vida moderna.</p>
+                </li>
+
+                <li>
+                    <span class="genero-numero">04</span>
+                    <h3>Fantasia Contemporânea</h3>
+                    <p>Magia e mundos extraordinários.</p>
+                </li>
             </ul>
         </section>
 
         <section class="home-destaques">
-            <h2>Livros em Destaque</h2>
-
-            <div class="pesquisa-livros">
-                <label for="buscar-livro">Pesquisar livros:</label>
-                <input
-                    type="search"
-                    id="buscar-livro"
-                    placeholder="Digite o título ou autor..."
-                >
+            <div class="titulo-secao">
+                <p class="secao-etiqueta">ESCOLHAS DA BIBLIOTECA</p>
+                <h2>Livros em destaque</h2>
+                <p>
+                    Histórias selecionadas para sua próxima leitura.
+                </p>
             </div>
 
-            <div class="filtro-genero">
-                <label for="filtrar-genero">Filtrar por gênero:</label>
+            <div class="painel-filtros">
+                <div class="pesquisa-livros">
+                    <label for="buscar-livro">
+                        Pesquisar livros
+                    </label>
 
-                <select id="filtrar-genero">
-                    <option value="todos">Todos os gêneros</option>
-                    <option value="Dark Romance">Dark Romance</option>
-                    <option value="Romance contemporâneo">Romance contemporâneo</option>
-                    <option value="Romance Gótico">Romance Gótico</option>
-                    <option value="Fantasia Contemporânea">Fantasia Contemporânea</option>
-                </select>
+                    <input
+                        type="search"
+                        id="buscar-livro"
+                        placeholder="Título ou autor..."
+                    >
+                </div>
+
+                <div class="filtro-genero">
+                    <label for="filtrar-genero">
+                        Gênero literário
+                    </label>
+
+                    <select id="filtrar-genero">
+                        <option value="todos">Todos os gêneros</option>
+                        <option value="Dark Romance">Dark Romance</option>
+                        <option value="Romance Gótico">Romance Gótico</option>
+                        <option value="Romance contemporâneo">Romance Contemporâneo</option>
+                        <option value="Fantasia Contemporânea">Fantasia Contemporânea</option>
+                    </select>
+                </div>
+
+                <div class="filtro-gratuitos">
+                    <label for="somente-gratuitos">
+                        <input
+                            type="checkbox"
+                            id="somente-gratuitos"
+                        >
+                        Apenas livros gratuitos
+                    </label>
+                </div>
             </div>
 
-            <div class="filtro-gratuitos">
-                <label for="somente-gratuitos">
-                    <input type="checkbox" id="somente-gratuitos">
-                    Mostrar somente livros gratuitos
-                </label>
+            <div
+                class="catalogo-livros"
+                id="catalogo-destaques">
             </div>
-
-            <div class="catalogo-livros" id="catalogo-destaques"></div>
 
             <p id="mensagem-sem-resultados" hidden>
                 Nenhum livro encontrado.
             </p>
+
+            <div class="ver-catalogo">
+                <a href="livros.html" class="hero-botao">
+                    Ver catálogo completo
+                </a>
+            </div>
         </section>
 
         <section class="home-formulario">
-            <h2>Descubra seu Próximo Livro</h2>
+            <div class="titulo-secao">
+                <p class="secao-etiqueta">SEU UNIVERSO LITERÁRIO</p>
+                <h2>Descubra seu próximo livro</h2>
+                <p>
+                    Conte um pouco sobre suas preferências
+                    e descubra novas possibilidades de leitura.
+                </p>
+            </div>
 
             <form id="form-preferencias">
                 <fieldset>
-                    <legend>Conte suas preferências de leitura</legend>
+                    <legend>Suas preferências de leitura</legend>
 
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
+                    <label for="nome">Nome</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        required
+                    >
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
 
-                    <label for="idade">Idade:</label>
-                    <input type="number" id="idade" name="idade" min="13" max="120">
+                    <label for="idade">Idade</label>
+                    <input
+                        type="number"
+                        id="idade"
+                        name="idade"
+                        min="13"
+                        max="120"
+                    >
 
-                    <label for="genero">Gênero preferido:</label>
+                    <label for="genero">Gênero preferido</label>
                     <select id="genero" name="genero" required>
-                        <option value="">Selecione seu gênero favorito</option>
+                        <option value="">Selecione um gênero</option>
                         <option value="Dark Romance">Dark Romance</option>
                         <option value="Romance Gótico">Romance Gótico</option>
                         <option value="Romance contemporâneo">Romance Contemporâneo</option>
                         <option value="Fantasia Contemporânea">Fantasia Contemporânea</option>
                     </select>
 
-                    <label for="trope">Tipo de história favorito:</label>
+                    <label for="trope">
+                        Tipo de história favorito
+                    </label>
+
                     <input
                         type="text"
                         id="trope"
@@ -119,18 +235,27 @@
                         placeholder="Ex: inimigos que se apaixonam"
                     >
 
-                    <button type="submit">Enviar</button>
+                    <button type="submit">
+                        Salvar preferências
+                    </button>
                 </fieldset>
             </form>
 
-            <p id="mensagem-formulario" role="status" hidden>
+            <p
+                id="mensagem-formulario"
+                role="status"
+                hidden>
                 Suas preferências foram salvas com sucesso!
             </p>
         </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 Obsidian. Todos os direitos reservados.</p>
+        <p>
+            &copy; 2026 Obsidian.
+            Todos os direitos reservados.
+        </p>
     </footer>
 </body>
 </html>

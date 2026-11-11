@@ -1,123 +1,465 @@
 
-/* Gêneros da página inicial */
+/* Identidade visual da página inicial */
 
-.home-generos {
+.pagina-home {
+    background-color: #110E12;
+    color: #F2E5D4;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+.pagina-home h1,
+.pagina-home h2,
+.pagina-home h3,
+.pagina-home .marca {
+    font-family: "Cinzel", Georgia, serif;
+}
+
+/* Cabeçalho */
+
+.pagina-home .cabecalho-home {
+    background: #160F17;
+    border-bottom: 1px solid #49313D;
+    padding: 0 30px;
+}
+
+.barra-navegacao {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.pagina-home .marca {
+    color: #C7A575;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.pagina-home header nav {
+    margin-top: 0;
+}
+
+.pagina-home header nav ul {
+    gap: 12px;
+}
+
+.pagina-home header nav a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #E5D9CF;
+}
+
+.pagina-home header nav a:hover,
+.pagina-home header nav a[aria-current="page"] {
+    color: #C7A575;
+    background: rgba(199, 165, 117, 0.1);
+}
+
+/* Conteúdo */
+
+.pagina-home .conteudo-home {
+    max-width: 1200px;
+    padding: 35px 25px 60px;
+}
+
+.pagina-home section {
+    margin-bottom: 35px;
+}
+
+/* Apresentação principal */
+
+.pagina-home .hero-home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 460px;
+    padding: 65px;
+    overflow: hidden;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(17, 14, 18, 0.97) 0%,
+            rgba(30, 16, 25, 0.92) 55%,
+            rgba(84, 28, 50, 0.42) 100%
+        ),
+        radial-gradient(
+            circle at 85% 50%,
+            #67344A,
+            #160F17 65%
+        );
+    border: 1px solid #49313D;
+    border-radius: 14px;
+}
+
+.hero-conteudo {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+}
+
+.hero-etiqueta,
+.secao-etiqueta {
+    color: #C7A575;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.pagina-home .hero-home h1 {
+    color: #F2E5D4;
+    font-size: clamp(32px, 4.5vw, 58px);
+    line-height: 1.25;
+    margin: 22px 0;
+}
+
+.hero-home h1 span {
+    display: block;
+    color: #C7A575;
+}
+
+.hero-descricao {
+    color: #CFC0B8;
+    font-size: 16px;
+    line-height: 1.9;
+    max-width: 580px;
+}
+
+.hero-acoes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.hero-botao {
+    display: inline-block;
+    background: #C7A575;
+    color: #1B1119;
+    padding: 15px 25px;
+    border: 1px solid #C7A575;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.hero-botao:hover {
+    background: #E0C79F;
+    color: #1B1119;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+.hero-link {
+    color: #E6D6C7;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+/* Títulos das seções */
+
+.titulo-secao {
     text-align: center;
+    max-width: 700px;
+    margin: 0 auto 35px;
 }
 
-.home-generos h2 {
-    margin-bottom: 25px;
+.pagina-home .titulo-secao h2 {
+    color: #E7CFAB;
+    font-size: clamp(24px, 3vw, 35px);
+    margin: 15px 0;
 }
 
-.home-generos ul {
+.titulo-secao > p:last-child {
+    color: #CFC0B8;
+    line-height: 1.8;
+}
+
+/* Gêneros */
+
+.pagina-home .home-generos {
+    background: #1A141B;
+    border: 1px solid #332431;
+    padding: 45px;
+}
+
+.lista-generos {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 15px;
+    gap: 18px;
 }
 
-.home-generos li {
+.pagina-home .lista-generos li {
+    background: #241A25;
+    border: 1px solid #49313D;
+    border-left: 3px solid #C7A575;
+    padding: 25px;
     margin: 0;
-    padding: 20px;
-    background-color: #252025;
-    border: 1px solid #49303a;
-    border-left: 4px solid #8B2948;
-    border-radius: 8px;
-    transition: transform 0.3s ease,
-                background-color 0.3s ease;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
 }
 
-.home-generos li:hover {
-    background-color: #38232d;
+.pagina-home .lista-generos li:hover {
+    background: #352333;
     transform: translateY(-3px);
+    cursor: default;
 }
 
-/* Livros em destaque */
+.genero-numero {
+    color: #C7A575;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
 
-.home-destaques h2 {
-    text-align: center;
+.pagina-home .lista-generos h3 {
+    color: #E7CFAB;
+    font-size: 18px;
+    margin: 15px 0 10px;
+}
+
+.pagina-home .lista-generos p {
+    color: #BFB1B8;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Destaques */
+
+.pagina-home .home-destaques {
+    background: #1A141B;
+    border: 1px solid #332431;
+    padding: 45px;
+}
+
+.painel-filtros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: end;
+    background: #241A25;
+    border: 1px solid #49313D;
+    border-radius: 10px;
+    padding: 25px;
     margin-bottom: 30px;
 }
 
-.home-destaques .pesquisa-livros,
-.home-destaques .filtro-genero {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+.pagina-home .painel-filtros label {
+    margin-top: 0;
+    color: #E7CFAB;
+    font-size: 14px;
 }
 
-.home-destaques .filtro-gratuitos {
+.pagina-home .painel-filtros input,
+.pagina-home .painel-filtros select {
+    background: #160F17;
+    border: 1px solid #584050;
+    color: #F2E5D4;
+}
+
+.pagina-home .pesquisa-livros,
+.pagina-home .filtro-genero,
+.pagina-home .filtro-gratuitos {
+    max-width: none;
+    margin: 0;
+}
+
+.pagina-home .filtro-gratuitos {
+    grid-column: 1 / -1;
+}
+
+.pagina-home .filtro-gratuitos label {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
 }
 
-/* Formulário da página inicial */
+.pagina-home .filtro-gratuitos input {
+    width: auto;
+    accent-color: #C7A575;
+}
 
-.home-formulario h2 {
+.pagina-home .livro-card {
+    background: #261C27;
+    border: 1px solid #463343;
+}
+
+.pagina-home .livro-card h3 {
+    color: #E7CFAB;
+    font-family: "Cinzel", Georgia, serif;
+    font-size: 16px;
+}
+
+.pagina-home .livro-card .botao-livro {
+    background: #541C32;
+}
+
+.pagina-home .livro-card .botao-livro:hover {
+    background: #76334E;
+}
+
+.pagina-home .livro-card .botao-gratis {
+    background: #355C46;
+}
+
+.pagina-home .livro-card .botao-gratis:hover {
+    background: #46785C;
+}
+
+.ver-catalogo {
     text-align: center;
-    margin-bottom: 30px;
+    margin-top: 35px;
 }
 
-.home-formulario form {
+/* Formulário */
+
+.pagina-home .home-formulario {
+    background: #1A141B;
+    border: 1px solid #332431;
+    padding: 45px;
+}
+
+.pagina-home .home-formulario form {
     max-width: 650px;
 }
 
-.home-formulario fieldset {
-    background-color: #222;
-    border: 1px solid #704054;
+.pagina-home .home-formulario fieldset {
+    background: #241A25;
+    border: 1px solid #584050;
     padding: 30px;
 }
 
-.home-formulario input,
-.home-formulario select {
-    transition: border-color 0.3s ease;
+.pagina-home .home-formulario legend {
+    color: #E7CFAB;
+    font-family: "Cinzel", Georgia, serif;
+    font-size: 17px;
 }
 
-.home-formulario input:hover,
-.home-formulario select:hover {
-    border-color: #D5B895;
+.pagina-home .home-formulario label {
+    color: #E6D6C7;
+    font-size: 14px;
 }
 
-.home-formulario button {
+.pagina-home .home-formulario input,
+.pagina-home .home-formulario select {
+    background: #160F17;
+    border: 1px solid #584050;
+    color: #F2E5D4;
+}
+
+.pagina-home .home-formulario button {
     width: 100%;
-    margin-top: 25px;
-    font-weight: bold;
+    background: #C7A575;
+    color: #1B1119;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.pagina-home .home-formulario button:hover {
+    background: #E0C79F;
 }
 
 #mensagem-formulario {
     max-width: 650px;
     margin: 20px auto 0;
     padding: 15px;
-    text-align: center;
+    background: #244332;
     color: #D6F0DD;
-    background-color: #244332;
     border: 1px solid #46785C;
     border-radius: 8px;
+    text-align: center;
 }
 
 #mensagem-formulario[hidden] {
     display: none;
 }
 
-@media (max-width: 600px) {
-    .home-generos ul {
-        grid-template-columns: 1fr;
+/* Responsividade */
+
+@media (max-width: 768px) {
+    .barra-navegacao {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 0;
+        gap: 15px;
     }
 
-    .home-generos li {
+    .pagina-home .cabecalho-home {
+        padding: 0 15px;
+    }
+
+    .pagina-home .conteudo-home {
+        padding: 20px 15px;
+    }
+
+    .pagina-home .hero-home {
+        min-height: 380px;
+        padding: 35px;
+    }
+
+    .pagina-home .home-generos,
+    .pagina-home .home-destaques,
+    .pagina-home .home-formulario {
+        padding: 25px;
+    }
+
+    .lista-generos {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .pagina-home .hero-home {
+        min-height: 0;
+        padding: 30px 20px;
+    }
+
+    .hero-acoes {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .hero-botao,
+    .hero-link {
+        text-align: center;
+    }
+
+    .painel-filtros {
+        grid-template-columns: 1fr;
         padding: 15px;
     }
 
-    .home-formulario fieldset {
+    .pagina-home .home-generos,
+    .pagina-home .home-destaques,
+    .pagina-home .home-formulario {
+        padding: 20px 15px;
+    }
+
+    .pagina-home .home-formulario fieldset {
         padding: 18px;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .home-generos li {
+    .pagina-home .lista-generos li,
+    .hero-botao {
         transition: none;
     }
 
-    .home-generos li:hover {
+    .pagina-home .lista-generos li:hover,
+    .hero-botao:hover {
         transform: none;
     }
 }
