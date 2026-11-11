@@ -463,3 +463,112 @@
         transform: none;
     }
 }
+
+
+/* Página Explorar Livros */
+
+.pagina-explorar .explorar-apresentacao {
+    background:
+        radial-gradient(
+            circle at 90% 20%,
+            rgba(103, 52, 74, 0.6),
+            transparent 60%
+        ),
+        #1A141B;
+    border: 1px solid #49313D;
+    padding: 60px 45px;
+    text-align: center;
+}
+
+.pagina-explorar .explorar-apresentacao h1 {
+    color: #E7CFAB;
+    font-size: clamp(28px, 4vw, 45px);
+    margin: 20px 0;
+}
+
+.pagina-explorar .explorar-apresentacao > p:last-child {
+    color: #CFC0B8;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.pagina-explorar .explorar-catalogo {
+    background: #1A141B;
+    border: 1px solid #332431;
+    padding: 45px;
+}
+
+.pagina-explorar .painel-filtros label {
+    margin-top: 0;
+    color: #E7CFAB;
+    font-size: 14px;
+}
+
+.pagina-explorar .painel-filtros input,
+.pagina-explorar .painel-filtros select {
+    background: #160F17;
+    border: 1px solid #584050;
+    color: #F2E5D4;
+}
+
+.pagina-explorar .pesquisa-livros,
+.pagina-explorar .filtro-genero,
+.pagina-explorar .filtro-gratuitos {
+    max-width: none;
+    margin: 0;
+}
+
+.pagina-explorar .filtro-gratuitos {
+    grid-column: 1 / -1;
+}
+
+.pagina-explorar .filtro-gratuitos input {
+    width: auto;
+    accent-color: #C7A575;
+}
+
+.pagina-explorar .livro-card {
+    background: #261C27;
+    border: 1px solid #463343;
+}
+
+.pagina-explorar .livro-card h3 {
+    color: #E7CFAB;
+    font-family: "Cinzel", Georgia, serif;
+    font-size: 16px;
+}
+
+.pagina-explorar .livro-card .botao-livro {
+    background-color: #541C32;
+}
+
+.pagina-explorar .livro-card .botao-livro:hover {
+    background-color: #76334E;
+}
+
+.pagina-explorar .livro-card .botao-livro.botao-gratis {
+    background-color: #355C46;
+}
+
+.pagina-explorar .livro-card .botao-livro.botao-gratis:hover {
+    background-color: #46785C;
+}
+
+@media (max-width: 768px) {
+    .pagina-explorar .explorar-apresentacao,
+    .pagina-explorar .explorar-catalogo {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pagina-explorar .explorar-apresentacao,
+    .pagina-explorar .explorar-catalogo {
+        padding: 25px 15px;
+    }
+
+    .pagina-explorar .painel-filtros {
+        grid-template-columns: 1fr;
+    }
+}
