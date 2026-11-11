@@ -1,0 +1,123 @@
+
+/* Gêneros da página inicial */
+
+.home-generos {
+    text-align: center;
+}
+
+.home-generos h2 {
+    margin-bottom: 25px;
+}
+
+.home-generos ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.home-generos li {
+    margin: 0;
+    padding: 20px;
+    background-color: #252025;
+    border: 1px solid #49303a;
+    border-left: 4px solid #8B2948;
+    border-radius: 8px;
+    transition: transform 0.3s ease,
+                background-color 0.3s ease;
+}
+
+.home-generos li:hover {
+    background-color: #38232d;
+    transform: translateY(-3px);
+}
+
+/* Livros em destaque */
+
+.home-destaques h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.home-destaques .pesquisa-livros,
+.home-destaques .filtro-genero {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-destaques .filtro-gratuitos {
+    display: flex;
+    justify-content: center;
+}
+
+/* Formulário da página inicial */
+
+.home-formulario h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.home-formulario form {
+    max-width: 650px;
+}
+
+.home-formulario fieldset {
+    background-color: #222;
+    border: 1px solid #704054;
+    padding: 30px;
+}
+
+.home-formulario input,
+.home-formulario select {
+    transition: border-color 0.3s ease;
+}
+
+.home-formulario input:hover,
+.home-formulario select:hover {
+    border-color: #D5B895;
+}
+
+.home-formulario button {
+    width: 100%;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+#mensagem-formulario {
+    max-width: 650px;
+    margin: 20px auto 0;
+    padding: 15px;
+    text-align: center;
+    color: #D6F0DD;
+    background-color: #244332;
+    border: 1px solid #46785C;
+    border-radius: 8px;
+}
+
+#mensagem-formulario[hidden] {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .home-generos ul {
+        grid-template-columns: 1fr;
+    }
+
+    .home-generos li {
+        padding: 15px;
+    }
+
+    .home-formulario fieldset {
+        padding: 18px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home-generos li {
+        transition: none;
+    }
+
+    .home-generos li:hover {
+        transform: none;
+    }
+}

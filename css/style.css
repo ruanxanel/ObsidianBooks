@@ -1,6 +1,20 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: #0d0d0d;
     color: #F2EDE8;
     font-family: Arial, sans-serif;
@@ -14,19 +28,60 @@ header {
 
 header h1 {
     font-size: 42px;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
     color: #D5B895;
 }
 
 header p {
     font-size: 16px;
     line-height: 1.6;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+header nav {
+    margin-top: 25px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav li {
+    padding: 0;
+    margin: 0;
+}
+
+header nav a {
+    display: inline-block;
+    padding: 10px 12px;
+    border-radius: 6px;
+    color: #F2EDE8;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+
+header nav a:hover,
+header nav a[aria-current="page"] {
+    color: #D5B895;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-decoration: none;
 }
 
 main {
+    width: 100%;
     max-width: 1100px;
     margin: 0 auto;
     padding: 40px 20px;
+    flex: 1;
 }
 
 section {
@@ -39,7 +94,11 @@ section {
 section h2 {
     color: #D5B895;
     font-size: 28px;
-    margin-bottom: 20px;
+    margin: 0 0 20px;
+}
+
+section p {
+    line-height: 1.6;
 }
 
 section ul {
@@ -53,11 +112,6 @@ section li {
     margin-bottom: 10px;
     border-left: 4px solid #641C32;
     border-radius: 5px;
-}
-
-section li:hover {
-    background-color: #3a2630;
-    cursor: pointer;
 }
 
 a {
@@ -79,6 +133,7 @@ fieldset {
     border: 1px solid #641C32;
     border-radius: 10px;
     padding: 25px;
+    min-width: 0;
 }
 
 legend {
@@ -93,17 +148,19 @@ label {
     margin-bottom: 5px;
 }
 
-input, select {
+input,
+select {
     width: 100%;
     padding: 12px;
     background-color: #292929;
     color: #F2EDE8;
     border: 1px solid #444;
     border-radius: 6px;
-    box-sizing: border-box;
+    font: inherit;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
     outline: 2px solid #D5B895;
     outline-offset: 2px;
 }
@@ -124,7 +181,8 @@ button:hover {
     background-color: #8B2948;
 }
 
-button:focus-visible {
+button:focus-visible,
+a:focus-visible {
     outline: 2px solid #D5B895;
     outline-offset: 3px;
 }
@@ -139,41 +197,17 @@ footer {
 footer p {
     color: #999;
     font-size: 14px;
-}
-
-header nav {
-    margin-top: 25px;
-}
-
-header nav ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
-    list-style: none;
-    padding: 0;
     margin: 0;
-}
-
-header nav li {
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-}
-
-header nav a {
-    color: #F2EDE8;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-header nav a:hover {
-    color: #D5B895;
 }
 
 #resultado-quiz[hidden],
-#mensagem-quiz[hidden] {
+#mensagem-quiz[hidden],
+#mensagem-formulario[hidden] {
     display: none;
+}
+
+#mensagem-quiz {
+    color: #D5B895;
+    text-align: center;
+    margin-top: 20px;
 }

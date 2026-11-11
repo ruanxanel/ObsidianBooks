@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Explorar Livros | Obsidian</title>
 
     <link rel="stylesheet" href="css/style.css">
@@ -22,7 +23,7 @@
         <nav aria-label="Navegação principal">
             <ul>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="livros.html">Explorar livros</a></li>
+                <li><a href="livros.html" aria-current="page">Explorar livros</a></li>
                 <li><a href="gratuitos.html">Livros gratuitos</a></li>
                 <li><a href="favoritos.html">Favoritos</a></li>
                 <li><a href="quiz.html">Quiz literário</a></li>
@@ -38,9 +39,11 @@
 
             <div class="pesquisa-livros">
                 <label for="buscar-livro">Pesquisar livros:</label>
-                <input type="search" 
-                        id="buscar-livro"
-                        placeholder="Digite o título ou autor...">
+                <input
+                    type="search"
+                    id="buscar-livro"
+                    placeholder="Digite o título ou autor..."
+                >
             </div>
 
             <div class="filtro-genero">
@@ -51,6 +54,7 @@
                     <option value="Dark Romance">Dark Romance</option>
                     <option value="Romance contemporâneo">Romance contemporâneo</option>
                     <option value="Romance Gótico">Romance Gótico</option>
+                    <option value="Fantasia Contemporânea">Fantasia Contemporânea</option>
                 </select>
             </div>
 

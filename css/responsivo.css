@@ -9,7 +9,7 @@
     }
 
     header nav ul {
-        gap: 15px;
+        gap: 12px;
     }
 
     main {
@@ -40,6 +40,10 @@
         max-width: 150px;
         height: 225px;
     }
+
+    fieldset {
+        padding: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -56,11 +60,12 @@
     }
 
     header nav ul {
-        gap: 12px;
+        gap: 8px;
     }
 
     header nav a {
-        font-size: 14px;
+        font-size: 13px;
+        padding: 8px;
     }
 
     main {
@@ -85,10 +90,8 @@
     }
 
     .livro-card img {
-        width: 100%;
         max-width: 180px;
         height: 270px;
-        margin: 0;
     }
 
     .acoes-livro {
@@ -99,12 +102,10 @@
     .acoes-livro .botao-livro {
         width: 100%;
         max-width: 220px;
-        box-sizing: border-box;
     }
 
     fieldset {
         padding: 15px;
-        min-width: 0;
     }
 
     legend {
@@ -113,12 +114,6 @@
 
     form button {
         width: 100%;
-    }
-
-    th, td {
-        padding: 8px;
-        font-size: 12px;
-        overflow-wrap: anywhere;
     }
 
     footer {

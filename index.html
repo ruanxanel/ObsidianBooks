@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obsidian</title>
+
+    <title>Obsidian | Início</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/livros.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/responsivo.css">
 
     <script src="js/dados.js" defer></script>
-    <script src="js/favoritos.js"></script>
+    <script src="js/favoritos.js" defer></script>
     <script src="js/livros.js" defer></script>
     <script src="js/filtros.js" defer></script>
-    <script src="js/quiz.js" defer></script>
     <script src="js/formulario.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Obsidian</h1>
-        <p>Explore histórias intensas, romances inesquecíveis e universos sombrios. Encontre sua próxima leitura no Obsidian.</p>
+        <p>
+            Explore histórias intensas, romances inesquecíveis e
+            universos sombrios. Encontre sua próxima leitura no Obsidian.
+        </p>
+
         <nav aria-label="Navegação principal">
             <ul>
-                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html" aria-current="page">Início</a></li>
                 <li><a href="livros.html">Explorar livros</a></li>
                 <li><a href="gratuitos.html">Livros gratuitos</a></li>
                 <li><a href="favoritos.html">Favoritos</a></li>
@@ -30,26 +35,29 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section>
+        <section class="home-generos">
             <h2>Gêneros que Exploramos</h2>
+
             <ul>
                 <li>Dark Romance</li>
                 <li>Romance Gótico</li>
                 <li>Romance Contemporâneo</li>
-                <li>Romance Clássico</li>
+                <li>Fantasia Contemporânea</li>
             </ul>
         </section>
 
-        <section>
+        <section class="home-destaques">
             <h2>Livros em Destaque</h2>
-            
+
             <div class="pesquisa-livros">
                 <label for="buscar-livro">Pesquisar livros:</label>
                 <input
                     type="search"
                     id="buscar-livro"
-                    placeholder="Digite o título ou autor...">
+                    placeholder="Digite o título ou autor..."
+                >
             </div>
 
             <div class="filtro-genero">
@@ -60,6 +68,7 @@
                     <option value="Dark Romance">Dark Romance</option>
                     <option value="Romance contemporâneo">Romance contemporâneo</option>
                     <option value="Romance Gótico">Romance Gótico</option>
+                    <option value="Fantasia Contemporânea">Fantasia Contemporânea</option>
                 </select>
             </div>
 
@@ -71,14 +80,15 @@
             </div>
 
             <div class="catalogo-livros" id="catalogo-destaques"></div>
-    
+
             <p id="mensagem-sem-resultados" hidden>
                 Nenhum livro encontrado.
             </p>
         </section>
-    
-        <section>
+
+        <section class="home-formulario">
             <h2>Descubra seu Próximo Livro</h2>
+
             <form id="form-preferencias">
                 <fieldset>
                     <legend>Conte suas preferências de leitura</legend>
@@ -103,16 +113,21 @@
                     </select>
 
                     <label for="trope">Trope favorito:</label>
-                    <input type="text" id="trope" name="trope" placeholder="Ex: rivais que se apaixonam">
+                    <input
+                        type="text"
+                        id="trope"
+                        name="trope"
+                        placeholder="Ex: rivais que se apaixonam"
+                    >
 
                     <button type="submit">Enviar</button>
                 </fieldset>
             </form>
+
             <p id="mensagem-formulario" role="status" hidden>
                 Suas preferências foram salvas com sucesso!
             </p>
         </section>
-
     </main>
 
     <footer>

@@ -1,3 +1,4 @@
+
 const livros = [
     {
         id: 1,
@@ -52,7 +53,7 @@ const livros = [
         gratuito: false,
         destaque: false,
         linkCompra: "https://www.amazon.com/Ritual-Shantel-Tessier/dp/B0C44DVSQV",
-        linkGratuito: null,
+        linkGratuito: null
     },
     {
         id: 6,
@@ -63,7 +64,7 @@ const livros = [
         gratuito: false,
         destaque: false,
         linkCompra: "https://www.amazon.com/God-Malice-College-Romance-Legacy-ebook/dp/B09Z9K12P2",
-        linkGratuito: null,
+        linkGratuito: null
     },
     {
         id: 7,
@@ -74,62 +75,62 @@ const livros = [
         gratuito: false,
         destaque: false,
         linkCompra: "https://www.amazon.com.br/Does-Hurt-H-D-Carlton/dp/1957635037",
-        linkGratuito: null,
+        linkGratuito: null
     },
     {
         id: 8,
         titulo: "O Morro dos Ventos Uivantes",
         autor: "Emily Brontë",
-        genero: "Dark Romance",
+        genero: "Romance Gótico",
         imagem: "assets/images/morro.webp",
         gratuito: true,
         destaque: true,
         linkCompra: null,
-        linkGratuito: "https://diegodelpasso.com/wp-content/uploads/2016/05/emily-brontc3ab-e28093-o-morro-dos-ventos-uivantes.pdf",
+        linkGratuito: "https://www.gutenberg.org/cache/epub/768/pg768-images.html"
     },
     {
         id: 9,
         titulo: "O Fantasma da Ópera",
         autor: "Gaston Leroux",
-        genero: "Dark Romance",
+        genero: "Romance Gótico",
         imagem: "assets/images/phantom.webp",
         gratuito: true,
         destaque: false,
         linkCompra: null,
-        linkGratuito: "https://www.ispsn.org/sites/default/files/documentos-virtuais/pdf/o-fantasma-da-opera-gaston-leroux.pdf",
+        linkGratuito: "https://www.gutenberg.org/cache/epub/175/pg175-images.html"
     },
     {
         id: 10,
         titulo: "Jane Eyre",
         autor: "Charlotte Brontë",
-        genero: "Dark Romance",
+        genero: "Romance Gótico",
         imagem: "assets/images/jane.webp",
         gratuito: true,
         destaque: false,
         linkCompra: null,
-        linkGratuito: "https://img.travessa.com.br/capitulo/ZAHAR/JANE_EYRE-9788537817612.pdf",
+        linkGratuito: "https://www.gutenberg.org/cache/epub/1260/pg1260-images.html"
     },
     {
         id: 11,
         titulo: "O Retrato de Dorian Gray",
         autor: "Oscar Wilde",
-        genero: "Dark Romance",
+        genero: "Romance Gótico",
         imagem: "assets/images/retrato.webp",
         gratuito: true,
         destaque: false,
         linkCompra: null,
-        linkGratuito: "https://www.jaimemoniz.com/images/docs/recursos/Oscar-Wilde-livro.pdf",
+        linkGratuito: "https://www.gutenberg.org/cache/epub/174/pg174-images.html"
     },
     {
         id: 12,
         titulo: "Drácula",
         autor: "Bram Stoker",
-        genero: "Dark Romance",
+        genero: "Romance Gótico",
         imagem: "assets/images/dracula.webp",
         gratuito: true,
         destaque: false,
         linkCompra: null,
-        linkGratuito: "https://dn721607.ca.archive.org/0/items/dracula-bram-stoker/Dracula%20-%20Bram%20Stoker.pdf",
+        linkGratuito: "https://www.gutenberg.org/cache/epub/345/pg345-images.html"
     },
     {
         id: 13,
@@ -140,7 +141,7 @@ const livros = [
         gratuito: false,
         destaque: true,
         linkCompra: "https://www.amazon.com.br/Mexican-Gothic-Silvia-Moreno-Garcia/dp/0525620788",
-        linkGratuito: null,
+        linkGratuito: null
     },
     {
         id: 14,
@@ -151,18 +152,18 @@ const livros = [
         gratuito: false,
         destaque: false,
         linkCompra: "https://www.amazon.com.br/Rebecca-Daphne-Du-Maurier/dp/0349006571",
-        linkGratuito: null,
+        linkGratuito: null
     },
     {
         id: 15,
         titulo: "A Casa no Mar Cerúleo",
         autor: "T. J. Klune",
-        genero: "Romance Gótico",
+        genero: "Fantasia Contemporânea",
         imagem: "assets/images/casa.webp",
         gratuito: false,
         destaque: false,
         linkCompra: "https://www.amazon.com.br/casa-no-mar-cer%C3%BAleo-ebook/dp/B0B46KKHF6",
-        linkGratuito: null,
+        linkGratuito: null
     },
     {
         id: 16,
@@ -173,7 +174,6 @@ const livros = [
         gratuito: false,
         destaque: false,
         linkCompra: "https://www.amazon.com.br/Gallant-V-Schwab/dp/B09FC6C1K8",
-        linkGratuito: null,
+        linkGratuito: null
     }
 ];
-console.log(livros);

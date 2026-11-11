@@ -76,7 +76,7 @@ if (catalogo) {
             const botaoCompra = document.createElement("a");
 
             botaoCompra.href = livro.linkCompra;
-            botaoCompra.textContent = "Comprar físico";
+            botaoCompra.textContent = "Comprar livro";
             botaoCompra.target = "_blank";
             botaoCompra.rel = "noopener noreferrer";
             botaoCompra.classList.add("botao-livro");
