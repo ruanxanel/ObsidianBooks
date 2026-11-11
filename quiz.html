@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz Literário | Obsidian</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/livros.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+
+    <script src="js/dados.js" defer></script>
+    <script src="js/quiz.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Obsidian</h1>
+
+        <p>Descubra histórias que combinam com seu estilo de leitura.</p>
+
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="livros.html">Explorar livros</a></li>
+                <li><a href="gratuitos.html">Livros gratuitos</a></li>
+                <li><a href="favoritos.html">Favoritos</a></li>
+                <li><a href="quiz.html">Quiz literário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Descubra sua Próxima Leitura</h2>
+
+            <p>
+                Responda às perguntas e encontre livros
+                que combinam com suas preferências.
+            </p>
+
+            <form id="form-quiz">
+                <fieldset>
+                    <legend>Suas preferências literárias</legend>
+
+                    <label for="genero-quiz">
+                        Qual gênero você prefere?
+                    </label>
+
+                    <select id="genero-quiz" required>
+                        <option value="">Selecione um gênero</option>
+                        <option value="Dark Romance">Dark Romance</option>
+                        <option value="Romance Gótico">Romance Gótico</option>
+                        <option value="Romance contemporâneo">
+                            Romance Contemporâneo
+                        </option>
+                    </select>
+
+                    <label for="acesso-quiz">
+                        Como você prefere ler?
+                    </label>
+
+                    <select id="acesso-quiz" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="todos">Qualquer livro</option>
+                        <option value="gratuitos">Somente gratuitos</option>
+                    </select>
+
+                    <button type="submit">
+                        Descobrir livros
+                    </button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="resultado-quiz" hidden>
+            <h2>Livros Recomendados para Você</h2>
+
+            <p>
+                Selecionamos estas histórias de acordo
+                com suas preferências.
+            </p>
+
+            <div
+                class="catalogo-livros"
+                id="livros-recomendados">
+            </div>
+
+            <p id="mensagem-quiz" hidden>
+                Nenhum livro encontrado para essas preferências.
+                Tente selecionar outras opções.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Obsidian. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
