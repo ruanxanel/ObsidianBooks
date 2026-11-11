@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,45 +7,71 @@
 
     <title>Livros Gratuitos | Obsidian</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/livros.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/responsivo.css">
 
     <script src="js/dados.js" defer></script>
     <script src="js/favoritos.js" defer></script>
     <script src="js/livros.js" defer></script>
 </head>
-<body>
-    <header>
-        <h1>Obsidian</h1>
-        <p>Descubra histórias incríveis disponíveis gratuitamente.</p>
 
-        <nav aria-label="Navegação principal">
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="livros.html">Explorar livros</a></li>
-                <li><a href="gratuitos.html" aria-current="page">Livros gratuitos</a></li>
-                <li><a href="favoritos.html">Favoritos</a></li>
-                <li><a href="quiz.html">Quiz literário</a></li>
-            </ul>
-        </nav>
+<body class="pagina-home pagina-gratuitos">
+
+    <header class="cabecalho-home">
+        <div class="barra-navegacao">
+            <a href="index.html" class="marca">Obsidian</a>
+
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="livros.html">Explorar</a></li>
+                    <li><a href="gratuitos.html" aria-current="page">Gratuitos</a></li>
+                    <li><a href="favoritos.html">Favoritos</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Biblioteca Gratuita</h2>
+    <main class="conteudo-home">
+
+        <section class="gratuitos-apresentacao">
+            <p class="secao-etiqueta">LEITURAS SEM CUSTO</p>
+
+            <h1>Histórias eternas, acesso gratuito</h1>
 
             <p>
-                Explore obras clássicas e histórias góticas
-                disponíveis gratuitamente para leitura.
+                Descubra clássicos da literatura, romances sombrios
+                e histórias inesquecíveis disponíveis gratuitamente.
             </p>
+        </section>
+
+        <section class="gratuitos-biblioteca">
+            <div class="titulo-secao">
+                <p class="secao-etiqueta">NOSSA SELEÇÃO</p>
+
+                <h2>Biblioteca Gratuita</h2>
+
+                <p>
+                    Explore obras que atravessaram gerações
+                    e descubra sua próxima leitura.
+                </p>
+            </div>
 
             <div class="catalogo-livros" id="catalogo-gratuitos"></div>
         </section>
+
     </main>
 
     <footer>
         <p>&copy; 2026 Obsidian. Todos os direitos reservados.</p>
     </footer>
+
 </body>
 </html>

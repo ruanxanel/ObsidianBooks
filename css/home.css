@@ -572,3 +572,79 @@
         grid-template-columns: 1fr;
     }
 }
+
+
+/* Página Livros Gratuitos */
+
+.pagina-gratuitos .gratuitos-apresentacao {
+    background:
+        radial-gradient(
+            circle at 85% 25%,
+            rgba(103, 52, 74, 0.6),
+            transparent 60%
+        ),
+        #1A141B;
+    border: 1px solid #49313D;
+    padding: 60px 45px;
+    text-align: center;
+}
+
+.pagina-gratuitos .gratuitos-apresentacao h1 {
+    color: #E7CFAB;
+    font-size: clamp(28px, 4vw, 45px);
+    margin: 20px 0;
+}
+
+.pagina-gratuitos .gratuitos-apresentacao > p:last-child {
+    color: #CFC0B8;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.pagina-gratuitos .gratuitos-biblioteca {
+    background: #1A141B;
+    border: 1px solid #332431;
+    padding: 45px;
+}
+
+.pagina-gratuitos .livro-card {
+    background: #261C27;
+    border: 1px solid #463343;
+}
+
+.pagina-gratuitos .livro-card h3 {
+    color: #E7CFAB;
+    font-family: "Cinzel", Georgia, serif;
+    font-size: 16px;
+}
+
+.pagina-gratuitos .livro-card .botao-livro {
+    background-color: #541C32;
+}
+
+.pagina-gratuitos .livro-card .botao-livro:hover {
+    background-color: #76334E;
+}
+
+.pagina-gratuitos .livro-card .botao-livro.botao-gratis {
+    background-color: #355C46;
+}
+
+.pagina-gratuitos .livro-card .botao-livro.botao-gratis:hover {
+    background-color: #46785C;
+}
+
+@media (max-width: 768px) {
+    .pagina-gratuitos .gratuitos-apresentacao,
+    .pagina-gratuitos .gratuitos-biblioteca {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pagina-gratuitos .gratuitos-apresentacao,
+    .pagina-gratuitos .gratuitos-biblioteca {
+        padding: 25px 15px;
+    }
+}
