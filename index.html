@@ -103,21 +103,20 @@
                     <input type="number" id="idade" name="idade" min="13" max="120">
 
                     <label for="genero">Gênero preferido:</label>
-                    <select id="genero" name="genero">
-                        <option value="mafia">Mafia Romance</option>
-                        <option value="dark-academia">Dark Academia</option>
-                        <option value="enemies">Enemies to Lovers</option>
-                        <option value="forbidden">Forbidden Romance</option>
-                        <option value="psicologico">Romance Psicológico</option>
-                        <option value="sobrenatural">Romance Sobrenatural</option>
+                    <select id="genero" name="genero" required>
+                        <option value="">Selecione seu gênero favorito</option>
+                        <option value="Dark Romance">Dark Romance</option>
+                        <option value="Romance Gótico">Romance Gótico</option>
+                        <option value="Romance contemporâneo">Romance Contemporâneo</option>
+                        <option value="Fantasia Contemporânea">Fantasia Contemporânea</option>
                     </select>
 
-                    <label for="trope">Trope favorito:</label>
+                    <label for="trope">Tipo de história favorito:</label>
                     <input
                         type="text"
                         id="trope"
                         name="trope"
-                        placeholder="Ex: rivais que se apaixonam"
+                        placeholder="Ex: inimigos que se apaixonam"
                     >
 
                     <button type="submit">Enviar</button>
