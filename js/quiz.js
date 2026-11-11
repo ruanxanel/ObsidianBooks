@@ -45,6 +45,10 @@ if (formularioQuiz) {
                 botao.rel = "noopener noreferrer";
                 botao.classList.add("botao-livro");
 
+                if (livro.gratuito && livro.linkGratuito) {
+                    botao.classList.add("botao-gratis");
+                }
+
                 card.appendChild(botao);
             }
 

@@ -1,3 +1,4 @@
+
 .catalogo-livros {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
@@ -25,15 +26,6 @@
     color: #aaa;
 }
 
-.botao-livro {
-    display: inline-block;
-    background-color: #641C32;
-    color: #fff;
-    padding: 12px 18px;
-    border-radius: 6px;
-    margin-top: 15px;
-}
-
 .livro-card img {
     width: 100%;
     max-width: 180px;
@@ -47,10 +39,37 @@
     transform: scale(1.05);
 }
 
+/* Botões dos livros */
+
+.botao-livro {
+    display: inline-block;
+    background-color: #641C32;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 6px;
+    margin-top: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .botao-livro:hover {
     background-color: #8B2948;
     color: #ffffff;
 }
+
+/* Botões de leitura gratuita */
+
+.botao-livro.botao-gratis {
+    background-color: #355C46;
+    color: #ffffff;
+}
+
+.botao-livro.botao-gratis:hover {
+    background-color: #46785C;
+    color: #ffffff;
+}
+
+/* Ações dos livros */
 
 .acoes-livro {
     display: flex;
@@ -59,13 +78,7 @@
     gap: 10px;
 }
 
-.botao-gratis {
-    background-color: #355C46;
-}
-
-.botao-gratis:hover {
-    background-color: #46785C;
-}
+/* Pesquisa */
 
 .pesquisa-livros {
     max-width: 500px;
@@ -76,6 +89,7 @@
     width: 100%;
 }
 
+/* Filtro de gênero */
 
 .filtro-genero {
     max-width: 500px;
@@ -85,6 +99,8 @@
 .filtro-genero select {
     width: 100%;
 }
+
+/* Filtro de gratuitos */
 
 .filtro-gratuitos {
     margin-bottom: 30px;
@@ -101,6 +117,8 @@
     width: auto;
 }
 
+/* Mensagens */
+
 #mensagem-sem-resultados {
     text-align: center;
     color: #D5B895;
@@ -111,12 +129,6 @@
     display: none;
 }
 
-button.botao-livro {
-    border: none;
-    cursor: pointer;
-    font: inherit;
-}
-
 #mensagem-favoritos-vazios {
     text-align: center;
     color: #D5B895;
@@ -125,4 +137,12 @@ button.botao-livro {
 
 #mensagem-favoritos-vazios[hidden] {
     display: none;
+}
+
+/* Botão de favoritos */
+
+button.botao-livro {
+    border: none;
+    cursor: pointer;
+    font: inherit;
 }
