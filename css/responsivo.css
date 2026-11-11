@@ -1,6 +1,15 @@
+
 @media (max-width: 768px) {
+    header {
+        padding: 25px 15px;
+    }
+
     header h1 {
         font-size: 34px;
+    }
+
+    header nav ul {
+        gap: 15px;
     }
 
     main {
@@ -15,8 +24,20 @@
         font-size: 24px;
     }
 
-    section img {
-        width: 150px;
+    .catalogo-livros {
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(min(100%, 180px), 1fr)
+        );
+        gap: 15px;
+    }
+
+    .livro-card {
+        padding: 15px;
+    }
+
+    .livro-card img {
+        max-width: 150px;
         height: 225px;
     }
 }
@@ -30,6 +51,22 @@
         font-size: 28px;
     }
 
+    header p {
+        font-size: 14px;
+    }
+
+    header nav ul {
+        gap: 12px;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+
     section {
         padding: 15px;
     }
@@ -38,16 +75,31 @@
         font-size: 21px;
     }
 
-    section img {
-        width: 120px;
-        height: 180px;
-        margin: 5px;
+    .catalogo-livros {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
-    th, td {
-        padding: 8px;
-        font-size: 12px;
-        overflow-wrap: anywhere;
+    .livro-card {
+        padding: 20px;
+    }
+
+    .livro-card img {
+        width: 100%;
+        max-width: 180px;
+        height: 270px;
+        margin: 0;
+    }
+
+    .acoes-livro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .acoes-livro .botao-livro {
+        width: 100%;
+        max-width: 220px;
+        box-sizing: border-box;
     }
 
     fieldset {
@@ -59,7 +111,21 @@
         font-size: 16px;
     }
 
-    button {
+    form button {
         width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+        overflow-wrap: anywhere;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 12px;
     }
 }
