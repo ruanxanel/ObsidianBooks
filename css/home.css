@@ -733,3 +733,139 @@
         padding: 25px 15px;
     }
 }
+
+
+/* Página Quiz Literário */
+
+.pagina-quiz .quiz-apresentacao {
+    background:
+        radial-gradient(
+            circle at 85% 25%,
+            rgba(103, 52, 74, 0.6),
+            transparent 60%
+        ),
+        #1A141B;
+    border: 1px solid #49313D;
+    padding: 60px 45px;
+    text-align: center;
+}
+
+.pagina-quiz .quiz-apresentacao h1 {
+    color: #E7CFAB;
+    font-size: clamp(28px, 4vw, 45px);
+    margin: 20px 0;
+}
+
+.pagina-quiz .quiz-apresentacao > p:last-child {
+    color: #CFC0B8;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.pagina-quiz .quiz-conteudo,
+.pagina-quiz .quiz-resultados {
+    background: #1A141B;
+    border: 1px solid #332431;
+    padding: 45px;
+}
+
+.pagina-quiz #form-quiz {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.pagina-quiz #form-quiz fieldset {
+    background: #241A25;
+    border: 1px solid #584050;
+    padding: 30px;
+}
+
+.pagina-quiz #form-quiz legend {
+    color: #E7CFAB;
+    font-family: "Cinzel", Georgia, serif;
+    font-size: 17px;
+}
+
+.pagina-quiz #form-quiz label {
+    color: #E6D6C7;
+    font-size: 14px;
+}
+
+.pagina-quiz #form-quiz select {
+    background: #160F17;
+    border: 1px solid #584050;
+    color: #F2E5D4;
+}
+
+.pagina-quiz #form-quiz button {
+    width: 100%;
+    background: #C7A575;
+    color: #1B1119;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.pagina-quiz #form-quiz button:hover {
+    background: #E0C79F;
+}
+
+.pagina-quiz .livro-card {
+    background: #261C27;
+    border: 1px solid #463343;
+}
+
+.pagina-quiz .livro-card h3 {
+    color: #E7CFAB;
+    font-family: "Cinzel", Georgia, serif;
+    font-size: 16px;
+}
+
+.pagina-quiz .livro-card .botao-livro {
+    background-color: #541C32;
+}
+
+.pagina-quiz .livro-card .botao-livro:hover {
+    background-color: #76334E;
+}
+
+.pagina-quiz .livro-card .botao-livro.botao-gratis {
+    background-color: #355C46;
+}
+
+.pagina-quiz .livro-card .botao-livro.botao-gratis:hover {
+    background-color: #46785C;
+}
+
+.pagina-quiz #resultado-quiz[hidden],
+.pagina-quiz #mensagem-quiz[hidden] {
+    display: none;
+}
+
+.pagina-quiz #mensagem-quiz:not([hidden]) {
+    background: #241A25;
+    border: 1px solid #49313D;
+    color: #CFC0B8;
+    padding: 25px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .pagina-quiz .quiz-apresentacao,
+    .pagina-quiz .quiz-conteudo,
+    .pagina-quiz .quiz-resultados {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pagina-quiz .quiz-apresentacao,
+    .pagina-quiz .quiz-conteudo,
+    .pagina-quiz .quiz-resultados {
+        padding: 25px 15px;
+    }
+
+    .pagina-quiz #form-quiz fieldset {
+        padding: 20px 15px;
+    }
+}

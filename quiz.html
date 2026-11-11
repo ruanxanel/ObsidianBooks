@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,37 +7,62 @@
 
     <title>Quiz Literário | Obsidian</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/livros.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/responsivo.css">
 
     <script src="js/dados.js" defer></script>
     <script src="js/quiz.js" defer></script>
 </head>
-<body>
-    <header>
-        <h1>Obsidian</h1>
-        <p>Descubra histórias que combinam com seu estilo de leitura.</p>
 
-        <nav aria-label="Navegação principal">
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="livros.html">Explorar livros</a></li>
-                <li><a href="gratuitos.html">Livros gratuitos</a></li>
-                <li><a href="favoritos.html">Favoritos</a></li>
-                <li><a href="quiz.html" aria-current="page">Quiz literário</a></li>
-            </ul>
-        </nav>
+<body class="pagina-home pagina-quiz">
+
+    <header class="cabecalho-home">
+        <div class="barra-navegacao">
+            <a href="index.html" class="marca">Obsidian</a>
+
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="livros.html">Explorar</a></li>
+                    <li><a href="gratuitos.html">Gratuitos</a></li>
+                    <li><a href="favoritos.html">Favoritos</a></li>
+                    <li><a href="quiz.html" aria-current="page">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Descubra sua Próxima Leitura</h2>
+    <main class="conteudo-home">
+
+        <section class="quiz-apresentacao">
+            <p class="secao-etiqueta">SUA JORNADA LITERÁRIA</p>
+
+            <h1>Qual história combina com você?</h1>
 
             <p>
-                Responda às perguntas e encontre livros
-                que combinam com suas preferências.
+                Cada leitor possui suas próprias preferências.
+                Responda a duas perguntas e descubra histórias
+                selecionadas para o seu estilo de leitura.
             </p>
+        </section>
+
+        <section class="quiz-conteudo">
+
+            <div class="titulo-secao">
+                <p class="secao-etiqueta">ENCONTRE SUA PRÓXIMA LEITURA</p>
+                <h2>Descubra seus livros</h2>
+
+                <p>
+                    Conte um pouco sobre suas preferências
+                    para receber recomendações.
+                </p>
+            </div>
 
             <form id="form-quiz">
                 <fieldset>
@@ -64,18 +90,25 @@
                         <option value="gratuitos">Somente gratuitos</option>
                     </select>
 
-                    <button type="submit">Descobrir livros</button>
+                    <button type="submit">
+                        Descobrir livros
+                    </button>
                 </fieldset>
             </form>
         </section>
 
-        <section id="resultado-quiz" hidden>
-            <h2>Livros Recomendados para Você</h2>
+        <section id="resultado-quiz" class="quiz-resultados" hidden>
 
-            <p>
-                Selecionamos estas histórias de acordo
-                com suas preferências.
-            </p>
+            <div class="titulo-secao">
+                <p class="secao-etiqueta">ESCOLHIDOS PARA VOCÊ</p>
+
+                <h2>Livros Recomendados</h2>
+
+                <p>
+                    Selecionamos estas histórias de acordo
+                    com suas preferências.
+                </p>
+            </div>
 
             <div class="catalogo-livros" id="livros-recomendados"></div>
 
@@ -84,10 +117,12 @@
                 Tente selecionar outras opções.
             </p>
         </section>
+
     </main>
 
     <footer>
         <p>&copy; 2026 Obsidian. Todos os direitos reservados.</p>
     </footer>
+
 </body>
 </html>
