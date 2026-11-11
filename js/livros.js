@@ -1,8 +1,9 @@
 const catalogoDestaques = document.querySelector("#catalogo-destaques");
 const catalogoGratuitos = document.querySelector("#catalogo-gratuitos");
 const catalogoExplorar = document.querySelector("#catalogo-explorar");
+const catalogoFavoritos = document.querySelector("#catalogo-favoritos");
 
-const catalogo = catalogoDestaques || catalogoGratuitos || catalogoExplorar;
+const catalogo = catalogoDestaques || catalogoGratuitos || catalogoExplorar || catalogoFavoritos;
 
 let livrosExibidos = livros;
 
@@ -16,49 +17,92 @@ if (catalogoDestaques) {
     livrosExibidos = livros.filter((livro) => livro.destaque);
 }
 
-livrosExibidos.forEach((livro) => {
-    const card = document.createElement("article");
+if (catalogoFavoritos) {
+    livrosExibidos = livros.filter((livro) =>
+        favoritos.includes(livro.id)
+    );
+}
 
-    card.classList.add("livro-card");
-    card.dataset.gratuito = livro.gratuito;
+if (catalogo) {
+    livrosExibidos.forEach((livro) => {
+        const card = document.createElement("article");
 
-    card.innerHTML = `
-        <img src="${livro.imagem}" alt="Capa do livro ${livro.titulo}">
+        card.classList.add("livro-card");
+        card.dataset.gratuito = livro.gratuito;
 
-        <h3>${livro.titulo}</h3>
+        card.innerHTML = `
+            <img src="${livro.imagem}" alt="Capa do livro ${livro.titulo}">
 
-        <p class="autor">${livro.autor}</p>
+            <h3>${livro.titulo}</h3>
 
-        <p class="genero">${livro.genero}</p>
-    `;
+            <p class="autor">${livro.autor}</p>
 
-    const acoes = document.createElement("div");
-    acoes.classList.add("acoes-livro");
+            <p class="genero">${livro.genero}</p>
+        `;
 
-    if (livro.linkCompra) {
-        const botaoCompra = document.createElement("a");
+        const acoes = document.createElement("div");
+        acoes.classList.add("acoes-livro");
 
-        botaoCompra.href = livro.linkCompra;
-        botaoCompra.textContent = "Comprar físico";
-        botaoCompra.target = "_blank";
-        botaoCompra.rel = "noopener noreferrer";
-        botaoCompra.classList.add("botao-livro");
+        const botaoFavorito = document.createElement("button");
 
-        acoes.appendChild(botaoCompra);
-    }
+        botaoFavorito.type = "button";
+        botaoFavorito.textContent = favoritos.includes(livro.id)
+            ? "❤️ Favoritado"
+            : "🤍 Favoritar";
 
-    if (livro.gratuito && livro.linkGratuito) {
-        const botaoGratis = document.createElement("a");
+        botaoFavorito.classList.add("botao-livro");
 
-        botaoGratis.href = livro.linkGratuito;
-        botaoGratis.textContent = "Ler grátis";
-        botaoGratis.target = "_blank";
-        botaoGratis.rel = "noopener noreferrer";
-        botaoGratis.classList.add("botao-livro", "botao-gratis");
-    
-        acoes.appendChild(botaoGratis);
-    }
-    
-    card.appendChild(acoes);
-    catalogo.appendChild(card);
-});
+        botaoFavorito.addEventListener("click", () => {
+            alternarFavorito(livro.id);
+
+            botaoFavorito.textContent = favoritos.includes(livro.id)
+                ? "❤️ Favoritado"
+                : "🤍 Favoritar";
+
+            if (catalogoFavoritos && !favoritos.includes(livro.id)) {
+                card.remove();
+
+                const mensagem = document.querySelector(
+                    "#mensagem-favoritos-vazios"
+                );
+
+                mensagem.hidden = catalogoFavoritos.children.length > 0;
+            }
+        });
+
+        acoes.appendChild(botaoFavorito);
+
+        if (livro.linkCompra) {
+            const botaoCompra = document.createElement("a");
+
+            botaoCompra.href = livro.linkCompra;
+            botaoCompra.textContent = "Comprar físico";
+            botaoCompra.target = "_blank";
+            botaoCompra.rel = "noopener noreferrer";
+            botaoCompra.classList.add("botao-livro");
+
+            acoes.appendChild(botaoCompra);
+        }
+
+        if (livro.gratuito && livro.linkGratuito) {
+            const botaoGratis = document.createElement("a");
+
+            botaoGratis.href = livro.linkGratuito;
+            botaoGratis.textContent = "Ler grátis";
+            botaoGratis.target = "_blank";
+            botaoGratis.rel = "noopener noreferrer";
+            botaoGratis.classList.add("botao-livro", "botao-gratis");
+
+            acoes.appendChild(botaoGratis);
+        }
+
+        card.appendChild(acoes);
+        catalogo.appendChild(card);
+    });
+}
+
+if (catalogoFavoritos) {
+    const mensagem = document.querySelector("#mensagem-favoritos-vazios");
+
+    mensagem.hidden = catalogoFavoritos.children.length > 0;
+}

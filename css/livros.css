@@ -110,3 +110,19 @@
 #mensagem-sem-resultados[hidden] {
     display: none;
 }
+
+button.botao-livro {
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+#mensagem-favoritos-vazios {
+    text-align: center;
+    color: #D5B895;
+    margin-top: 30px;
+}
+
+#mensagem-favoritos-vazios[hidden] {
+    display: none;
+}
