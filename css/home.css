@@ -648,3 +648,88 @@
         padding: 25px 15px;
     }
 }
+
+
+/* Página Favoritos */
+
+.pagina-favoritos .favoritos-apresentacao {
+    background:
+        radial-gradient(
+            circle at 85% 25%,
+            rgba(103, 52, 74, 0.6),
+            transparent 60%
+        ),
+        #1A141B;
+    border: 1px solid #49313D;
+    padding: 60px 45px;
+    text-align: center;
+}
+
+.pagina-favoritos .favoritos-apresentacao h1 {
+    color: #E7CFAB;
+    font-size: clamp(28px, 4vw, 45px);
+    margin: 20px 0;
+}
+
+.pagina-favoritos .favoritos-apresentacao > p:last-child {
+    color: #CFC0B8;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.pagina-favoritos .favoritos-biblioteca {
+    background: #1A141B;
+    border: 1px solid #332431;
+    padding: 45px;
+}
+
+.pagina-favoritos .livro-card {
+    background: #261C27;
+    border: 1px solid #463343;
+}
+
+.pagina-favoritos .livro-card h3 {
+    color: #E7CFAB;
+    font-family: "Cinzel", Georgia, serif;
+    font-size: 16px;
+}
+
+.pagina-favoritos .livro-card .botao-livro {
+    background-color: #541C32;
+}
+
+.pagina-favoritos .livro-card .botao-livro:hover {
+    background-color: #76334E;
+}
+
+.pagina-favoritos .livro-card .botao-livro.botao-gratis {
+    background-color: #355C46;
+}
+
+.pagina-favoritos .livro-card .botao-livro.botao-gratis:hover {
+    background-color: #46785C;
+}
+
+.pagina-favoritos #mensagem-favoritos-vazios:not([hidden]) {
+    background: #241A25;
+    border: 1px solid #49313D;
+    color: #CFC0B8;
+    padding: 35px 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .pagina-favoritos .favoritos-apresentacao,
+    .pagina-favoritos .favoritos-biblioteca {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pagina-favoritos .favoritos-apresentacao,
+    .pagina-favoritos .favoritos-biblioteca {
+        padding: 25px 15px;
+    }
+}

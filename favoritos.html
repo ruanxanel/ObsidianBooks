@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,35 +7,62 @@
 
     <title>Meus Favoritos | Obsidian</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/livros.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/responsivo.css">
 
     <script src="js/dados.js" defer></script>
     <script src="js/favoritos.js" defer></script>
     <script src="js/livros.js" defer></script>
 </head>
-<body>
-    <header>
-        <h1>Obsidian</h1>
-        <p>Suas histórias favoritas em um só lugar.</p>
 
-        <nav aria-label="Navegação principal">
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="livros.html">Explorar livros</a></li>
-                <li><a href="gratuitos.html">Livros gratuitos</a></li>
-                <li><a href="favoritos.html" aria-current="page">Favoritos</a></li>
-                <li><a href="quiz.html">Quiz literário</a></li>
-            </ul>
-        </nav>
+<body class="pagina-home pagina-favoritos">
+
+    <header class="cabecalho-home">
+        <div class="barra-navegacao">
+            <a href="index.html" class="marca">Obsidian</a>
+
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="livros.html">Explorar</a></li>
+                    <li><a href="gratuitos.html">Gratuitos</a></li>
+                    <li><a href="favoritos.html" aria-current="page">Favoritos</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Meus Favoritos ❤️</h2>
+    <main class="conteudo-home">
 
-            <p>Seus livros favoritos ficam salvos aqui.</p>
+        <section class="favoritos-apresentacao">
+            <p class="secao-etiqueta">SUA COLEÇÃO PESSOAL</p>
+
+            <h1>Histórias que conquistaram você</h1>
+
+            <p>
+                Guarde suas leituras preferidas e encontre
+                facilmente os livros que marcaram sua jornada.
+            </p>
+        </section>
+
+        <section class="favoritos-biblioteca">
+            <div class="titulo-secao">
+                <p class="secao-etiqueta">MINHA ESTANTE</p>
+
+                <h2>Meus Favoritos</h2>
+
+                <p>
+                    Todas as histórias que você escolheu
+                    guardar em um só lugar.
+                </p>
+            </div>
 
             <div class="catalogo-livros" id="catalogo-favoritos"></div>
 
@@ -42,10 +70,12 @@
                 Você ainda não adicionou nenhum livro aos favoritos.
             </p>
         </section>
+
     </main>
 
     <footer>
         <p>&copy; 2026 Obsidian. Todos os direitos reservados.</p>
     </footer>
+
 </body>
 </html>
