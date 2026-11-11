@@ -24,6 +24,19 @@ function criarCardLivro(livro, mostrarFavorito = true) {
     const acoes = document.createElement("div");
     acoes.classList.add("acoes-livro");
 
+    
+    const botaoDetalhes = document.createElement("button");
+    botaoDetalhes.type = "button";
+    botaoDetalhes.classList.add("botao-livro");
+    botaoDetalhes.textContent = "Ver detalhes";
+
+    botaoDetalhes.addEventListener("click", () => {
+        abrirModalLivro(livro);
+    });
+
+    acoes.appendChild(botaoDetalhes);
+
+
     if (mostrarFavorito) {
         const botaoFavorito = document.createElement("button");
         botaoFavorito.type = "button";
@@ -103,4 +116,74 @@ if (catalogoFavoritos) {
     if (mensagem) {
         mensagem.hidden = catalogoFavoritos.children.length > 0;
     }
+}
+
+
+function abrirModalLivro(livro) {
+    const modal = document.querySelector("#modal-livro");
+
+    if (!modal) {
+        return;
+    }
+
+    const imagem = document.querySelector("#modal-imagem");
+    const titulo = document.querySelector("#modal-titulo");
+    const autor = document.querySelector("#modal-autor");
+    const genero = document.querySelector("#modal-genero");
+    const sinopse = document.querySelector("#modal-sinopse");
+    const link = document.querySelector("#modal-link");
+
+    imagem.src = livro.imagem;
+    imagem.alt = `Capa do livro ${livro.titulo}`;
+
+    titulo.textContent = livro.titulo;
+    autor.textContent = `Autor: ${livro.autor}`;
+    genero.textContent = `Gênero: ${livro.genero}`;
+    sinopse.textContent = livro.sinopse || "Sinopse não disponível.";
+
+    const endereco = livro.gratuito
+        ? livro.linkGratuito
+        : livro.linkCompra;
+
+    if (endereco) {
+        link.href = endereco;
+        link.textContent = livro.gratuito
+            ? "Ler gratuitamente"
+            : "Comprar livro";
+        link.hidden = false;
+    } else {
+        link.hidden = true;
+    }
+
+    modal.hidden = false;
+    document.body.style.overflow = "hidden";
+}
+
+
+const modalLivro = document.querySelector("#modal-livro");
+const botaoFecharModal = document.querySelector("#fechar-modal");
+
+function fecharModalLivro() {
+    if (!modalLivro) {
+        return;
+    }
+
+    modalLivro.hidden = true;
+    document.body.style.overflow = "";
+}
+
+if (modalLivro && botaoFecharModal) {
+    botaoFecharModal.addEventListener("click", fecharModalLivro);
+
+    modalLivro.addEventListener("click", (evento) => {
+        if (evento.target === modalLivro) {
+            fecharModalLivro();
+        }
+    });
+
+    document.addEventListener("keydown", (evento) => {
+        if (evento.key === "Escape" && !modalLivro.hidden) {
+            fecharModalLivro();
+        }
+    });
 }
