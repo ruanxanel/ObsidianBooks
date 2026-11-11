@@ -1,9 +1,10 @@
-
 /* Identidade visual da página inicial */
 
 .pagina-home {
-    background-color: #110E12;
-    color: #F2E5D4;
+    background-color: #110e12;
+
+    color: #f2e5d4;
+
     font-family: "Inter", Arial, sans-serif;
 }
 
@@ -17,26 +18,38 @@
 /* Cabeçalho */
 
 .pagina-home .cabecalho-home {
-    background: #160F17;
-    border-bottom: 1px solid #49313D;
+    background: #160f17;
+
+    border-bottom: 1px solid #49313d;
+
     padding: 0 30px;
 }
 
 .barra-navegacao {
     max-width: 1200px;
+
     margin: 0 auto;
+
     min-height: 85px;
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
     gap: 25px;
 }
 
 .pagina-home .marca {
-    color: #C7A575;
+    color: #c7a575;
+
     font-size: 25px;
+
     font-weight: 700;
+
     letter-spacing: 2px;
+
     text-decoration: none;
 }
 
@@ -50,13 +63,16 @@
 
 .pagina-home header nav a {
     font-size: 14px;
+
     font-weight: 500;
-    color: #E5D9CF;
+
+    color: #e5d9cf;
 }
 
 .pagina-home header nav a:hover,
 .pagina-home header nav a[aria-current="page"] {
-    color: #C7A575;
+    color: #c7a575;
+
     background: rgba(199, 165, 117, 0.1);
 }
 
@@ -64,6 +80,7 @@
 
 .pagina-home .conteudo-home {
     max-width: 1200px;
+
     padding: 35px 25px 60px;
 }
 
@@ -75,95 +92,136 @@
 
 .pagina-home .hero-home {
     position: relative;
+
     display: flex;
+
     align-items: center;
+
     min-height: 460px;
+
     padding: 65px;
+
     overflow: hidden;
+
     background:
-        linear-gradient(
-            90deg,
+        linear-gradient(90deg,
             rgba(17, 14, 18, 0.97) 0%,
+
             rgba(30, 16, 25, 0.92) 55%,
-            rgba(84, 28, 50, 0.42) 100%
-        ),
-        radial-gradient(
-            circle at 85% 50%,
-            #67344A,
-            #160F17 65%
-        );
-    border: 1px solid #49313D;
+
+            rgba(84, 28, 50, 0.42) 100%),
+        radial-gradient(circle at 85% 50%,
+
+            #67344a,
+            #160f17 65%);
+
+    border: 1px solid #49313d;
+
     border-radius: 14px;
 }
 
 .hero-conteudo {
     position: relative;
+
     z-index: 1;
+
     max-width: 760px;
 }
 
 .hero-etiqueta,
 .secao-etiqueta {
-    color: #C7A575;
+    color: #c7a575;
+
     font-size: 12px;
+
     font-weight: 700;
+
     letter-spacing: 3px;
+
     text-transform: uppercase;
 }
 
 .pagina-home .hero-home h1 {
-    color: #F2E5D4;
+    color: #f2e5d4;
+
     font-size: clamp(32px, 4.5vw, 58px);
+
     line-height: 1.25;
+
     margin: 22px 0;
 }
 
 .hero-home h1 span {
     display: block;
-    color: #C7A575;
+
+    color: #c7a575;
 }
 
 .hero-descricao {
-    color: #CFC0B8;
+    color: #cfc0b8;
+
     font-size: 16px;
+
     line-height: 1.9;
+
     max-width: 580px;
 }
 
 .hero-acoes {
     display: flex;
+
     align-items: center;
+
     flex-wrap: wrap;
+
     gap: 25px;
+
     margin-top: 35px;
 }
 
 .hero-botao {
     display: inline-block;
-    background: #C7A575;
-    color: #1B1119;
+
+    background: #c7a575;
+
+    color: #1b1119;
+
     padding: 15px 25px;
-    border: 1px solid #C7A575;
+
+    border: 1px solid #c7a575;
+
     border-radius: 5px;
+
     font-size: 14px;
+
     font-weight: 700;
+
     text-decoration: none;
-    transition: background-color 0.3s ease,
-                transform 0.3s ease;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
 }
 
 .hero-botao:hover {
-    background: #E0C79F;
-    color: #1B1119;
+    background: #e0c79f;
+
+    color: #1b1119;
+
     text-decoration: none;
+
     transform: translateY(-2px);
 }
 
 .hero-link {
-    color: #E6D6C7;
+    color: #e6d6c7;
+
     font-size: 14px;
+
     font-weight: 600;
+
     text-decoration: underline;
+
     text-underline-offset: 6px;
 }
 
@@ -171,106 +229,144 @@
 
 .titulo-secao {
     text-align: center;
+
     max-width: 700px;
+
     margin: 0 auto 35px;
 }
 
 .pagina-home .titulo-secao h2 {
-    color: #E7CFAB;
+    color: #e7cfab;
+
     font-size: clamp(24px, 3vw, 35px);
+
     margin: 15px 0;
 }
 
-.titulo-secao > p:last-child {
-    color: #CFC0B8;
+.titulo-secao>p:last-child {
+    color: #cfc0b8;
+
     line-height: 1.8;
 }
 
 /* Gêneros */
 
 .pagina-home .home-generos {
-    background: #1A141B;
+    background: #1a141b;
+
     border: 1px solid #332431;
+
     padding: 45px;
 }
 
 .lista-generos {
     display: grid;
+
     grid-template-columns: repeat(2, minmax(0, 1fr));
+
     gap: 18px;
 }
 
 .pagina-home .lista-generos li {
-    background: #241A25;
-    border: 1px solid #49313D;
-    border-left: 3px solid #C7A575;
+    background: #241a25;
+
+    border: 1px solid #49313d;
+
+    border-left: 3px solid #c7a575;
+
     padding: 25px;
+
     margin: 0;
-    transition: background-color 0.3s ease,
-                transform 0.3s ease;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
 }
 
 .pagina-home .lista-generos li:hover {
     background: #352333;
+
     transform: translateY(-3px);
+
     cursor: default;
 }
 
 .genero-numero {
-    color: #C7A575;
+    color: #c7a575;
+
     font-size: 12px;
+
     letter-spacing: 2px;
 }
 
 .pagina-home .lista-generos h3 {
-    color: #E7CFAB;
+    color: #e7cfab;
+
     font-size: 18px;
+
     margin: 15px 0 10px;
 }
 
 .pagina-home .lista-generos p {
-    color: #BFB1B8;
+    color: #bfb1b8;
+
     font-size: 14px;
+
     margin: 0;
 }
 
 /* Destaques */
 
 .pagina-home .home-destaques {
-    background: #1A141B;
+    background: #1a141b;
+
     border: 1px solid #332431;
+
     padding: 45px;
 }
 
 .painel-filtros {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 20px;
+
     align-items: end;
-    background: #241A25;
-    border: 1px solid #49313D;
+
+    background: #241a25;
+
+    border: 1px solid #49313d;
+
     border-radius: 10px;
+
     padding: 25px;
+
     margin-bottom: 30px;
 }
 
 .pagina-home .painel-filtros label {
     margin-top: 0;
-    color: #E7CFAB;
+
+    color: #e7cfab;
+
     font-size: 14px;
 }
 
 .pagina-home .painel-filtros input,
 .pagina-home .painel-filtros select {
-    background: #160F17;
+    background: #160f17;
+
     border: 1px solid #584050;
-    color: #F2E5D4;
+
+    color: #f2e5d4;
 }
 
 .pagina-home .pesquisa-livros,
 .pagina-home .filtro-genero,
 .pagina-home .filtro-gratuitos {
     max-width: none;
+
     margin: 0;
 }
 
@@ -280,53 +376,63 @@
 
 .pagina-home .filtro-gratuitos label {
     display: flex;
+
     align-items: center;
+
     gap: 10px;
+
     cursor: pointer;
 }
 
 .pagina-home .filtro-gratuitos input {
     width: auto;
-    accent-color: #C7A575;
+
+    accent-color: #c7a575;
 }
 
 .pagina-home .livro-card {
-    background: #261C27;
+    background: #261c27;
+
     border: 1px solid #463343;
 }
 
 .pagina-home .livro-card h3 {
-    color: #E7CFAB;
+    color: #e7cfab;
+
     font-family: "Cinzel", Georgia, serif;
+
     font-size: 16px;
 }
 
 .pagina-home .livro-card .botao-livro {
-    background: #541C32;
+    background: #541c32;
 }
 
 .pagina-home .livro-card .botao-livro:hover {
-    background: #76334E;
+    background: #76334e;
 }
 
 .pagina-home .livro-card .botao-gratis {
-    background: #355C46;
+    background: #355c46;
 }
 
 .pagina-home .livro-card .botao-gratis:hover {
-    background: #46785C;
+    background: #46785c;
 }
 
 .ver-catalogo {
     text-align: center;
+
     margin-top: 35px;
 }
 
 /* Formulário */
 
 .pagina-home .home-formulario {
-    background: #1A141B;
+    background: #1a141b;
+
     border: 1px solid #332431;
+
     padding: 45px;
 }
 
@@ -335,49 +441,67 @@
 }
 
 .pagina-home .home-formulario fieldset {
-    background: #241A25;
+    background: #241a25;
+
     border: 1px solid #584050;
+
     padding: 30px;
 }
 
 .pagina-home .home-formulario legend {
-    color: #E7CFAB;
+    color: #e7cfab;
+
     font-family: "Cinzel", Georgia, serif;
+
     font-size: 17px;
 }
 
 .pagina-home .home-formulario label {
-    color: #E6D6C7;
+    color: #e6d6c7;
+
     font-size: 14px;
 }
 
 .pagina-home .home-formulario input,
 .pagina-home .home-formulario select {
-    background: #160F17;
+    background: #160f17;
+
     border: 1px solid #584050;
-    color: #F2E5D4;
+
+    color: #f2e5d4;
 }
 
 .pagina-home .home-formulario button {
     width: 100%;
-    background: #C7A575;
-    color: #1B1119;
+
+    background: #c7a575;
+
+    color: #1b1119;
+
     font-weight: 700;
+
     margin-top: 30px;
 }
 
 .pagina-home .home-formulario button:hover {
-    background: #E0C79F;
+    background: #e0c79f;
 }
 
 #mensagem-formulario {
     max-width: 650px;
+
     margin: 20px auto 0;
+
     padding: 15px;
+
     background: #244332;
-    color: #D6F0DD;
-    border: 1px solid #46785C;
+
+    color: #d6f0dd;
+
+    border: 1px solid #46785c;
+
     border-radius: 8px;
+
     text-align: center;
 }
 
@@ -390,8 +514,11 @@
 @media (max-width: 768px) {
     .barra-navegacao {
         flex-direction: column;
+
         justify-content: center;
+
         padding: 20px 0;
+
         gap: 15px;
     }
 
@@ -405,6 +532,7 @@
 
     .pagina-home .hero-home {
         min-height: 380px;
+
         padding: 35px;
     }
 
@@ -422,12 +550,15 @@
 @media (max-width: 480px) {
     .pagina-home .hero-home {
         min-height: 0;
+
         padding: 30px 20px;
     }
 
     .hero-acoes {
         flex-direction: column;
+
         align-items: stretch;
+
         gap: 20px;
     }
 
@@ -438,6 +569,7 @@
 
     .painel-filtros {
         grid-template-columns: 1fr;
+
         padding: 15px;
     }
 
@@ -453,6 +585,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+
     .pagina-home .lista-generos li,
     .hero-botao {
         transition: none;
@@ -464,52 +597,88 @@
     }
 }
 
-
-/* Página Explorar Livros */
-
-.pagina-explorar .explorar-apresentacao {
+/* Páginas internas: apresentação e catálogo compartilhados */
+.pagina-home .explorar-apresentacao,
+.pagina-home .gratuitos-apresentacao,
+.pagina-home .favoritos-apresentacao,
+.pagina-home .quiz-apresentacao {
     background:
-        radial-gradient(
-            circle at 90% 20%,
-            rgba(103, 52, 74, 0.6),
-            transparent 60%
-        ),
-        #1A141B;
-    border: 1px solid #49313D;
+        radial-gradient(circle at 85% 25%, rgba(103, 52, 74, 0.6), transparent 60%),
+        #1a141b;
+    border: 1px solid #49313d;
     padding: 60px 45px;
     text-align: center;
 }
 
-.pagina-explorar .explorar-apresentacao h1 {
-    color: #E7CFAB;
+.pagina-home .explorar-apresentacao h1,
+.pagina-home .gratuitos-apresentacao h1,
+.pagina-home .favoritos-apresentacao h1,
+.pagina-home .quiz-apresentacao h1 {
+    color: #e7cfab;
     font-size: clamp(28px, 4vw, 45px);
     margin: 20px 0;
 }
 
-.pagina-explorar .explorar-apresentacao > p:last-child {
-    color: #CFC0B8;
+.pagina-home .explorar-apresentacao>p:last-child,
+.pagina-home .gratuitos-apresentacao>p:last-child,
+.pagina-home .favoritos-apresentacao>p:last-child,
+.pagina-home .quiz-apresentacao>p:last-child {
+    color: #cfc0b8;
     max-width: 650px;
     margin: 0 auto;
     line-height: 1.8;
 }
 
-.pagina-explorar .explorar-catalogo {
-    background: #1A141B;
+.pagina-home .explorar-catalogo,
+.pagina-home .gratuitos-biblioteca,
+.pagina-home .favoritos-biblioteca,
+.pagina-home .quiz-conteudo,
+.pagina-home .quiz-resultados {
+    background: #1a141b;
     border: 1px solid #332431;
     padding: 45px;
 }
 
+/* Cartões e botões iguais em todas as páginas */
+.pagina-home .livro-card {
+    background: #261c27;
+    border: 1px solid #463343;
+}
+
+.pagina-home .livro-card h3 {
+    color: #e7cfab;
+    font-family: "Cinzel", Georgia, serif;
+    font-size: 16px;
+}
+
+.pagina-home .livro-card .botao-livro {
+    background-color: #541c32;
+}
+
+.pagina-home .livro-card .botao-livro:hover {
+    background-color: #76334e;
+}
+
+.pagina-home .livro-card .botao-livro.botao-gratis {
+    background-color: #355c46;
+}
+
+.pagina-home .livro-card .botao-livro.botao-gratis:hover {
+    background-color: #46785c;
+}
+
+/* Filtros da página Explorar */
 .pagina-explorar .painel-filtros label {
     margin-top: 0;
-    color: #E7CFAB;
+    color: #e7cfab;
     font-size: 14px;
 }
 
 .pagina-explorar .painel-filtros input,
 .pagina-explorar .painel-filtros select {
-    background: #160F17;
+    background: #160f17;
     border: 1px solid #584050;
-    color: #F2E5D4;
+    color: #f2e5d4;
 }
 
 .pagina-explorar .pesquisa-livros,
@@ -525,316 +694,58 @@
 
 .pagina-explorar .filtro-gratuitos input {
     width: auto;
-    accent-color: #C7A575;
+    accent-color: #c7a575;
 }
 
-.pagina-explorar .livro-card {
-    background: #261C27;
-    border: 1px solid #463343;
-}
-
-.pagina-explorar .livro-card h3 {
-    color: #E7CFAB;
-    font-family: "Cinzel", Georgia, serif;
-    font-size: 16px;
-}
-
-.pagina-explorar .livro-card .botao-livro {
-    background-color: #541C32;
-}
-
-.pagina-explorar .livro-card .botao-livro:hover {
-    background-color: #76334E;
-}
-
-.pagina-explorar .livro-card .botao-livro.botao-gratis {
-    background-color: #355C46;
-}
-
-.pagina-explorar .livro-card .botao-livro.botao-gratis:hover {
-    background-color: #46785C;
-}
-
-@media (max-width: 768px) {
-    .pagina-explorar .explorar-apresentacao,
-    .pagina-explorar .explorar-catalogo {
-        padding: 30px 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .pagina-explorar .explorar-apresentacao,
-    .pagina-explorar .explorar-catalogo {
-        padding: 25px 15px;
-    }
-
-    .pagina-explorar .painel-filtros {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-/* Página Livros Gratuitos */
-
-.pagina-gratuitos .gratuitos-apresentacao {
-    background:
-        radial-gradient(
-            circle at 85% 25%,
-            rgba(103, 52, 74, 0.6),
-            transparent 60%
-        ),
-        #1A141B;
-    border: 1px solid #49313D;
-    padding: 60px 45px;
-    text-align: center;
-}
-
-.pagina-gratuitos .gratuitos-apresentacao h1 {
-    color: #E7CFAB;
-    font-size: clamp(28px, 4vw, 45px);
-    margin: 20px 0;
-}
-
-.pagina-gratuitos .gratuitos-apresentacao > p:last-child {
-    color: #CFC0B8;
-    max-width: 650px;
-    margin: 0 auto;
-    line-height: 1.8;
-}
-
-.pagina-gratuitos .gratuitos-biblioteca {
-    background: #1A141B;
-    border: 1px solid #332431;
-    padding: 45px;
-}
-
-.pagina-gratuitos .livro-card {
-    background: #261C27;
-    border: 1px solid #463343;
-}
-
-.pagina-gratuitos .livro-card h3 {
-    color: #E7CFAB;
-    font-family: "Cinzel", Georgia, serif;
-    font-size: 16px;
-}
-
-.pagina-gratuitos .livro-card .botao-livro {
-    background-color: #541C32;
-}
-
-.pagina-gratuitos .livro-card .botao-livro:hover {
-    background-color: #76334E;
-}
-
-.pagina-gratuitos .livro-card .botao-livro.botao-gratis {
-    background-color: #355C46;
-}
-
-.pagina-gratuitos .livro-card .botao-livro.botao-gratis:hover {
-    background-color: #46785C;
-}
-
-@media (max-width: 768px) {
-    .pagina-gratuitos .gratuitos-apresentacao,
-    .pagina-gratuitos .gratuitos-biblioteca {
-        padding: 30px 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .pagina-gratuitos .gratuitos-apresentacao,
-    .pagina-gratuitos .gratuitos-biblioteca {
-        padding: 25px 15px;
-    }
-}
-
-
-/* Página Favoritos */
-
-.pagina-favoritos .favoritos-apresentacao {
-    background:
-        radial-gradient(
-            circle at 85% 25%,
-            rgba(103, 52, 74, 0.6),
-            transparent 60%
-        ),
-        #1A141B;
-    border: 1px solid #49313D;
-    padding: 60px 45px;
-    text-align: center;
-}
-
-.pagina-favoritos .favoritos-apresentacao h1 {
-    color: #E7CFAB;
-    font-size: clamp(28px, 4vw, 45px);
-    margin: 20px 0;
-}
-
-.pagina-favoritos .favoritos-apresentacao > p:last-child {
-    color: #CFC0B8;
-    max-width: 650px;
-    margin: 0 auto;
-    line-height: 1.8;
-}
-
-.pagina-favoritos .favoritos-biblioteca {
-    background: #1A141B;
-    border: 1px solid #332431;
-    padding: 45px;
-}
-
-.pagina-favoritos .livro-card {
-    background: #261C27;
-    border: 1px solid #463343;
-}
-
-.pagina-favoritos .livro-card h3 {
-    color: #E7CFAB;
-    font-family: "Cinzel", Georgia, serif;
-    font-size: 16px;
-}
-
-.pagina-favoritos .livro-card .botao-livro {
-    background-color: #541C32;
-}
-
-.pagina-favoritos .livro-card .botao-livro:hover {
-    background-color: #76334E;
-}
-
-.pagina-favoritos .livro-card .botao-livro.botao-gratis {
-    background-color: #355C46;
-}
-
-.pagina-favoritos .livro-card .botao-livro.botao-gratis:hover {
-    background-color: #46785C;
-}
-
+/* Estado vazio dos favoritos */
 .pagina-favoritos #mensagem-favoritos-vazios:not([hidden]) {
-    background: #241A25;
-    border: 1px solid #49313D;
-    color: #CFC0B8;
+    background: #241a25;
+    border: 1px solid #49313d;
+    color: #cfc0b8;
     padding: 35px 20px;
     text-align: center;
     border-radius: 8px;
 }
 
-@media (max-width: 768px) {
-    .pagina-favoritos .favoritos-apresentacao,
-    .pagina-favoritos .favoritos-biblioteca {
-        padding: 30px 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .pagina-favoritos .favoritos-apresentacao,
-    .pagina-favoritos .favoritos-biblioteca {
-        padding: 25px 15px;
-    }
-}
-
-
-/* Página Quiz Literário */
-
-.pagina-quiz .quiz-apresentacao {
-    background:
-        radial-gradient(
-            circle at 85% 25%,
-            rgba(103, 52, 74, 0.6),
-            transparent 60%
-        ),
-        #1A141B;
-    border: 1px solid #49313D;
-    padding: 60px 45px;
-    text-align: center;
-}
-
-.pagina-quiz .quiz-apresentacao h1 {
-    color: #E7CFAB;
-    font-size: clamp(28px, 4vw, 45px);
-    margin: 20px 0;
-}
-
-.pagina-quiz .quiz-apresentacao > p:last-child {
-    color: #CFC0B8;
-    max-width: 650px;
-    margin: 0 auto;
-    line-height: 1.8;
-}
-
-.pagina-quiz .quiz-conteudo,
-.pagina-quiz .quiz-resultados {
-    background: #1A141B;
-    border: 1px solid #332431;
-    padding: 45px;
-}
-
+/* Formulário e resultados do quiz */
 .pagina-quiz #form-quiz {
     max-width: 650px;
     margin: 0 auto;
 }
 
 .pagina-quiz #form-quiz fieldset {
-    background: #241A25;
+    background: #241a25;
     border: 1px solid #584050;
     padding: 30px;
 }
 
 .pagina-quiz #form-quiz legend {
-    color: #E7CFAB;
+    color: #e7cfab;
     font-family: "Cinzel", Georgia, serif;
     font-size: 17px;
 }
 
 .pagina-quiz #form-quiz label {
-    color: #E6D6C7;
+    color: #e6d6c7;
     font-size: 14px;
 }
 
 .pagina-quiz #form-quiz select {
-    background: #160F17;
+    background: #160f17;
     border: 1px solid #584050;
-    color: #F2E5D4;
+    color: #f2e5d4;
 }
 
 .pagina-quiz #form-quiz button {
     width: 100%;
-    background: #C7A575;
-    color: #1B1119;
+    background: #c7a575;
+    color: #1b1119;
     font-weight: 700;
     margin-top: 30px;
 }
 
 .pagina-quiz #form-quiz button:hover {
-    background: #E0C79F;
-}
-
-.pagina-quiz .livro-card {
-    background: #261C27;
-    border: 1px solid #463343;
-}
-
-.pagina-quiz .livro-card h3 {
-    color: #E7CFAB;
-    font-family: "Cinzel", Georgia, serif;
-    font-size: 16px;
-}
-
-.pagina-quiz .livro-card .botao-livro {
-    background-color: #541C32;
-}
-
-.pagina-quiz .livro-card .botao-livro:hover {
-    background-color: #76334E;
-}
-
-.pagina-quiz .livro-card .botao-livro.botao-gratis {
-    background-color: #355C46;
-}
-
-.pagina-quiz .livro-card .botao-livro.botao-gratis:hover {
-    background-color: #46785C;
+    background: #e0c79f;
 }
 
 .pagina-quiz #resultado-quiz[hidden],
@@ -843,26 +754,44 @@
 }
 
 .pagina-quiz #mensagem-quiz:not([hidden]) {
-    background: #241A25;
-    border: 1px solid #49313D;
-    color: #CFC0B8;
+    background: #241a25;
+    border: 1px solid #49313d;
+    color: #cfc0b8;
     padding: 25px;
     text-align: center;
 }
 
 @media (max-width: 768px) {
-    .pagina-quiz .quiz-apresentacao,
-    .pagina-quiz .quiz-conteudo,
-    .pagina-quiz .quiz-resultados {
+
+    .pagina-home .explorar-apresentacao,
+    .pagina-home .gratuitos-apresentacao,
+    .pagina-home .favoritos-apresentacao,
+    .pagina-home .quiz-apresentacao,
+    .pagina-home .explorar-catalogo,
+    .pagina-home .gratuitos-biblioteca,
+    .pagina-home .favoritos-biblioteca,
+    .pagina-home .quiz-conteudo,
+    .pagina-home .quiz-resultados {
         padding: 30px 20px;
     }
 }
 
 @media (max-width: 480px) {
-    .pagina-quiz .quiz-apresentacao,
-    .pagina-quiz .quiz-conteudo,
-    .pagina-quiz .quiz-resultados {
+
+    .pagina-home .explorar-apresentacao,
+    .pagina-home .gratuitos-apresentacao,
+    .pagina-home .favoritos-apresentacao,
+    .pagina-home .quiz-apresentacao,
+    .pagina-home .explorar-catalogo,
+    .pagina-home .gratuitos-biblioteca,
+    .pagina-home .favoritos-biblioteca,
+    .pagina-home .quiz-conteudo,
+    .pagina-home .quiz-resultados {
         padding: 25px 15px;
+    }
+
+    .pagina-explorar .painel-filtros {
+        grid-template-columns: 1fr;
     }
 
     .pagina-quiz #form-quiz fieldset {
