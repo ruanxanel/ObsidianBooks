@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minha Lista de Leitura | Obsidian</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/livros.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+
+    <script src="js/dados.js" defer></script>
+    <script src="js/favoritos.js" defer></script>
+    <script src="js/lista-leitura.js" defer></script>
+    <script src="js/livros.js" defer></script>
+    <script src="js/minha-lista.js" defer></script>
+</head>
+
+<body class="pagina-home pagina-lista">
+
+    <header class="cabecalho-home">
+        <div class="barra-navegacao">
+            <a href="index.html" class="marca">Obsidian</a>
+
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="livros.html">Explorar</a></li>
+                    <li><a href="gratuitos.html">Gratuitos</a></li>
+                    <li><a href="favoritos.html">Favoritos</a></li>
+                    <li><a href="minha-lista.html" aria-current="page">Minha Lista</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="conteudo-home">
+        <section class="lista-apresentacao">
+            <p class="secao-etiqueta">SUA JORNADA LITERÁRIA</p>
+            <h1>Minha Lista de Leitura</h1>
+            <p>
+                Organize suas próximas histórias, acompanhe
+                suas leituras e guarde os livros que já terminou.
+            </p>
+        </section>
+
+        <section class="lista-secao">
+            <div class="titulo-secao">
+                <h2>Quero ler</h2>
+            </div>
+            <div id="lista-quero-ler" class="catalogo-livros"></div>
+            <p id="vazio-quero-ler" hidden>Nenhum livro nesta categoria.</p>
+        </section>
+
+        <section class="lista-secao">
+            <div class="titulo-secao">
+                <h2>Lendo</h2>
+            </div>
+            <div id="lista-lendo" class="catalogo-livros"></div>
+            <p id="vazio-lendo" hidden>Nenhum livro nesta categoria.</p>
+        </section>
+
+        <section class="lista-secao">
+            <div class="titulo-secao">
+                <h2>Concluído</h2>
+            </div>
+            <div id="lista-concluido" class="catalogo-livros"></div>
+            <p id="vazio-concluido" hidden>Nenhum livro nesta categoria.</p>
+        </section>
+
+        <div id="modal-livro" class="modal-livro" hidden>
+            <div class="modal-conteudo">
+                <button id="fechar-modal" type="button" aria-label="Fechar detalhes">
+                    &times;
+                </button>
+
+                <img id="modal-imagem" src="" alt="">
+
+                <h2 id="modal-titulo"></h2>
+                <p id="modal-autor"></p>
+                <p id="modal-genero"></p>
+                <p id="modal-sinopse"></p>
+
+                <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer">
+                    Ver livro
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Obsidian. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

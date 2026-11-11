@@ -798,3 +798,42 @@
         padding: 20px 15px;
     }
 }
+
+
+/* Página Minha Lista de Leitura */
+
+.lista-apresentacao {
+    text-align: center;
+    padding: 70px 20px 45px;
+}
+
+.lista-apresentacao h1 {
+    font-family: "Cinzel", serif;
+    color: #d6b77a;
+    margin: 15px 0;
+}
+
+.lista-apresentacao p {
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.lista-secao {
+    margin: 35px 0 65px;
+}
+
+.lista-secao h2 {
+    color: #d6b77a;
+    font-family: "Cinzel", serif;
+}
+
+.lista-secao > p {
+    text-align: center;
+    color: #c7b5aa;
+    margin-top: 20px;
+}
+
+.lista-secao > p[hidden] {
+    display: none;
+}

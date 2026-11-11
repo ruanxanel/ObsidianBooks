@@ -1,4 +1,3 @@
-
 const formulario = document.querySelector("#form-preferencias");
 const mensagemFormulario = document.querySelector("#mensagem-formulario");
 const campoGenero = document.querySelector("#genero");
