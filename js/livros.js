@@ -21,6 +21,63 @@ function criarCardLivro(livro, mostrarFavorito = true) {
 
     card.append(imagem, titulo, autor, genero);
 
+    const areaAvaliacao = document.createElement("div");
+    areaAvaliacao.classList.add("avaliacao-livro");
+
+    const estrelas = document.createElement("div");
+    estrelas.classList.add("estrelas");
+
+    const textoAvaliacao = document.createElement("p");
+    textoAvaliacao.classList.add("texto-avaliacao");
+
+    function atualizarEstrelas() {
+        const notaAtual = obterAvaliacao(livro.id);
+
+        estrelas.replaceChildren();
+
+        for (let nota = 1; nota <= 5; nota++) {
+            const estrela = document.createElement("button");
+
+            estrela.type = "button";
+            estrela.classList.add("estrela-avaliacao");
+
+            estrela.textContent = nota <= notaAtual ? "★" : "☆";
+
+            estrela.setAttribute(
+                "aria-label",
+                `Avaliar ${livro.titulo} com ${nota} estrelas`
+            );
+
+            estrela.setAttribute(
+                "aria-pressed",
+                String(nota === notaAtual)
+            );
+
+            estrela.addEventListener("click", () => {
+                const sucesso = nota === obterAvaliacao(livro.id)
+                    ? removerAvaliacao(livro.id)
+                    : salvarAvaliacao(livro.id, nota);
+
+                if (sucesso) {
+                    atualizarEstrelas();
+                } else {
+                    alert("Não foi possível salvar sua avaliação.");
+                }
+            });
+
+            estrelas.appendChild(estrela);
+        }
+
+        textoAvaliacao.textContent = notaAtual > 0
+            ? `Sua avaliação: ${notaAtual}/5`
+            : "Ainda não avaliado";
+    }
+
+    atualizarEstrelas();
+
+    areaAvaliacao.append(estrelas, textoAvaliacao);
+    card.appendChild(areaAvaliacao);
+
     const acoes = document.createElement("div");
     acoes.classList.add("acoes-livro");
 

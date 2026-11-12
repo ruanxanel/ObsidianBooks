@@ -150,3 +150,46 @@ button.botao-livro { font-size: 14px; margin-top: 0; }
     outline: 2px solid #d6b77a;
     outline-offset: 3px;
 }
+
+
+/* Avaliação dos livros */
+
+.avaliacao-livro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin: 15px 0;
+}
+
+.estrelas {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.estrela-avaliacao {
+    background: transparent;
+    border: none;
+    color: #d6b77a;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 2px;
+    line-height: 1;
+    transition: transform 0.2s ease;
+}
+
+.estrela-avaliacao:hover {
+    transform: scale(1.2);
+}
+
+.estrela-avaliacao:focus-visible {
+    outline: 2px solid #d6b77a;
+    outline-offset: 3px;
+}
+
+.texto-avaliacao {
+    font-size: 13px;
+    color: #c7b5aa;
+    text-align: center;
+}
