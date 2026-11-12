@@ -13,7 +13,9 @@ function filtrarLivros() {
     const somenteGratuitos = filtroGratuitos.checked;
     let quantidadeVisivel = 0;
 
-    const cards = document.querySelectorAll("#catalogo-explorar .livro-card");
+    const cards = document.querySelectorAll(
+        "#catalogo-explorar .livro-card, #catalogo-destaques .livro-card"
+    );
 
     cards.forEach((card) => {
         const titulo = card.querySelector("h3").textContent.toLocaleLowerCase("pt-BR");
