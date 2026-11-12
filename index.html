@@ -21,6 +21,7 @@
     <script src="js/lista-leitura.js" defer></script>
     <script src="js/avaliacoes.js" defer></script>
     <script src="js/livros.js" defer></script>
+    <script src="js/recomendacoes.js" defer></script>
     <script src="js/filtros.js" defer></script>
     <script src="js/formulario.js" defer></script>
 </head>
@@ -249,6 +250,20 @@
                 hidden>
                 Suas preferências foram salvas com sucesso!
             </p>
+        </section>
+
+        <section class="home-recomendacoes">
+            <div class="titulo-secao">
+                <p class="secao-etiqueta">ESCOLHIDOS PARA VOCÊ</p>
+                <h2>Recomendações Personalizadas</h2>
+                <p>
+                    Descubra livros que combinam com suas preferências literárias.
+                </p>
+            </div>
+
+            <div id="catalogo-recomendacoes" class="catalogo-livros"></div>
+
+            <p id="mensagem-recomendacoes" hidden></p>
         </section>
 
         <div id="modal-livro" class="modal-livro" hidden>

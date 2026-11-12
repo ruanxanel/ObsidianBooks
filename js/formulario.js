@@ -18,6 +18,8 @@ if (formulario && mensagemFormulario && campoGenero && campoTrope) {
                 JSON.stringify(preferencias)
             );
 
+            document.dispatchEvent(new Event("preferenciasAtualizadas"));
+
             mensagemFormulario.textContent =
                 "Suas preferências foram salvas com sucesso!";
 
